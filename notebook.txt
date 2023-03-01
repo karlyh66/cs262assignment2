@@ -1,0 +1,8 @@
+March 1, 2023
+=========================
+Progress:
+- Started basic client/machine code
+
+Questions:
+- Are the clients supposed to connect to each other? Or should we have a central 
+  server "brokering" the communication?
