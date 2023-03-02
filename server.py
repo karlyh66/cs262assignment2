@@ -18,18 +18,27 @@ class Server(object):
         self.sock.listen(2)
         while True:
             self.clients[0], self.addresses[0] = self.sock.accept()
-            print("Client 0 connected. Socket descriptor: " + str(self.clients[0]))
-            threading.Thread(target = self.handleClient,args = (self.clients[0], self.addresses[0], self.clients)).start()
+            
             self.clients[1], self.addresses[1] = self.sock.accept()
-            print("Client 1 connected. Socket descriptor: " + str(self.clients[1]))
-            threading.Thread(target = self.handleClient,args = (self.clients[1], self.addresses[1], self.clients)).start()
+
             self.clients[2], self.addresses[2] = self.sock.accept()
+
+            # don't start until all 3 clients connected
+
+            print("All 3 cilents connected!")
+
+            print("Client 0 connected. Socket descriptor: " + str(self.clients[0]))
+            threading.Thread(target = self.handleClient,args = (self.clients[0], self.addresses[0], 0)).start()
+
+            print("Client 1 connected. Socket descriptor: " + str(self.clients[1]))
+            threading.Thread(target = self.handleClient,args = (self.clients[1], self.addresses[1], 1)).start()
+            
             print("Client 2 connected. Socket descriptor: " + str(self.clients[2]))
-            threading.Thread(target = self.handleClient,args = (self.clients[2], self.addresses[2], self.clients)).start()
+            threading.Thread(target = self.handleClient,args = (self.clients[2], self.addresses[2], 2)).start()
     
-    def handleClient(self, client, address, all_clients):
+    def handleClient(self, client, address, idx):
         # handling receiving client messages then sending them to the correct receipients
-        remaining_clients = [c for c in all_clients if c.fileno() != client.fileno()]
+        remaining_clients = [self.clients[i] for i in range(3) if i != idx]
         client1 = remaining_clients[0]
         print("Client 1 file descriptor: " + str(client1))
         client2 = remaining_clients[1]
@@ -42,8 +51,8 @@ class Server(object):
                     response = data
                     if (data.decode() == "exit"):
                         print("Client with file descriptor" + client + "disconnected.")
-                    client.send(response)
                     client1.send(response)
+                    client2.send(response)
                 else:
                     raise error('A client disconnected')
             except:

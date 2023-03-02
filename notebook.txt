@@ -3,6 +3,7 @@ March 1, 2023
 Progress:
 - Started basic client/machine code
 - Implemented basic server code to connect client comms
+- Client can send message any of the two (or both) other clients
 
 Questions:
 - Are the clients supposed to connect to each other? Or should we have a central 
