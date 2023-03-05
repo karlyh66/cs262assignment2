@@ -9,3 +9,25 @@ Questions:
 - Are the clients supposed to connect to each other? Or should we have a central 
   server "brokering" the communication?
     - For now we are implementing with a server but will see Ed feedback
+
+
+March 5, 2023 
+=========================
+Progress:
+Most logical clock functionality is implemented
+- We now take random number generation into account to determine each machine's clock rate, and the action taken at each clock clock_cycle
+- The code "responds" to the random number telling the client which other machine(s) to send the message to (if any), as encoded in the random number from 1-10
+    - In particular, the server parses the message sent by the client, in the form "<recipient code> <logical clock value>"
+    - Recipient code "1" means send to the first other machine, recipient code "2" means send to the second other machine, and recipient code "3" means send to both other machines
+    - To each client, the "first other machine" remains the same machine throughout (as does the "second other machine")
+- Implemented writing to logs
+- Implemented actually simulating the clock rates by having client do a `time.sleep(2 / self.rate)` (will change to 1 / self.rate later, but we wanted to observe things more slowly)
+- Implemented properly updating the client clock value
+
+Issues:
+- We spent a long time trying to change our model to being a peer-to-peer based one, where each machine has a client and server thread that together send and receive to and from the two other machines
+- However, the 3 machine + 1 server model still makes the most sense to us, and by the time we had thought of the peer-to-peer model, we had already fully implemented (the socket and send/receive parts of the) client/server framework
+
+TODOs:
+- Analyze log files in more detail
+- Find a nicer way to run the three programs that do not involve manually specifying the machine ID (1, 2, or 3), since that is less than ideal design

@@ -48,11 +48,17 @@ class Server(object):
                 data = client.recv(size)
                 if data:
                     # Set the response to echo back the recieved data 
-                    response = data
-                    if (data.decode() == "exit"):
-                        print("Client with file descriptor" + client + "disconnected.")
-                    client1.send(response)
-                    client2.send(response)
+                    # response = data
+                    # client1.send(response)
+                    # client2.send(response)
+                    print(data.decode())
+                    recipient, clock_val = data.decode().split()
+                    print("recipient:" + recipient)
+                    print("clock val:" + clock_val)
+                    if recipient == "1" or recipient == "3":
+                        client1.send(clock_val.encode())
+                    if recipient == "2" or recipient == "3":
+                        client2.send(clock_val.encode())
                 else:
                     raise error('A client disconnected')
             except:
@@ -61,11 +67,5 @@ class Server(object):
 
 
 if __name__ == "__main__":
-    while True:
-        port_num = input("Port? ")
-        try:
-            port_num = int(port_num)
-            break
-        except ValueError:
-            pass
-    Server(port_num).listen()
+    port = 6000
+    Server(port).listen()
