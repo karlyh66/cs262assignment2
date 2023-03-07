@@ -155,5 +155,5 @@ if __name__ == "__main__":
         print("Usage: client ID")
         sys.exit(1)
     port = 2000
-    run_no = 9
+    run_no = 4
     Client(port, int(sys.argv[1]), run_no).run()

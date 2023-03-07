@@ -44,3 +44,18 @@ Progress:
 - started working on analysis report
 - saved data not just in log.txt form but also in .csv form for easier and more versatile analysis
 - started pandas code for analysis of csv, goal to create metrics/charts
+
+March 7, 2023 
+=========================
+Progress:
+- we found a bug caused by the clients already starting their clock cycles (so, sending messages) before all three clients are connected
+    - this leads to the message parsing code (in the server) throwing an exception
+    - for context, all of the messeges that each client sends to the server are of format "<sender type> <logical clock value>" (a concatenation of two ints, with a whitespace between them)
+        - sender type = 1 if send is to the first other machine, 2 if send is to the second other machine, 3 if the send is to both machines
+    - we fixed this bug by having the clients not go into the clock_cycle() infinite loop until sender sends them a message indicating that the all three clients have connected
+- collected more data (we have 5 runs' worth of data now, in .txt and .csv format)
+Next steps:
+- data analysis
+- consider starting to track system time from the moment all 3 clients connect to server
+    - treat system time as "nanoseconds elapsed since the beginning of this system"
+    - we currently only record nanoseconds since the UNIX epoch
