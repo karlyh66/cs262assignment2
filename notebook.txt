@@ -31,3 +31,12 @@ Issues:
 TODOs:
 - Analyze log files in more detail
 - Find a nicer way to run the three programs that do not involve manually specifying the machine ID (1, 2, or 3), since that is less than ideal design
+
+March 6, 2023 
+=========================
+Progress:
+- Fix broken pipe issue by increasing message buffer size and handling sigints
+- Add unit tests
+- Start working on analysis report
+- Change log to create csv instead of txt file so we can analyze in pandas
+- Start pandas code for analysis of csv, goal to create metrics/charts
