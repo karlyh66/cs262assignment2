@@ -17,7 +17,7 @@ class Client(object):
         self.port = port
         self.id = id
         self.run_no = run_no
-        self.df = pd.DataFrame(columns=['event_type', 'system_time', 'clock_time', 'message_queue_length'])
+        self.df = pd.DataFrame(columns=['event_type', 'system_time', 'old_clock_time', 'new_clock_time', 'message_queue_length'])
         self.rate = random.randint(1, 6)
         self.messages = Queue()
         self.logical_clock = 0
@@ -67,7 +67,8 @@ class Client(object):
         new_row = {
             'event_type': '',
             'system_time': int(curr_time),
-            'clock_time': self.logical_clock,
+            'old_clock_time': self.logical_clock,
+            'new_clock_time': self.logical_clock,
             'message_queue_length': 0
         }
 
@@ -78,6 +79,7 @@ class Client(object):
             self.f.write('Received a message that the logical clock time is ' + item.decode() + ". New logical clock time is " + str(self.logical_clock) + ". System time is " + curr_time + ". Length of message queue: " + str(self.messages.qsize()) + ".\n")
             new_row['event_type'] = 'receive'
             new_row['message_queue_length'] = self.messages.qsize()
+            new_row['new_clock_time'] = self.logical_clock
             self.df.loc[len(self.df.index)] = new_row
             return
 
@@ -112,11 +114,19 @@ class Client(object):
                 + str(self.logical_clock) + ".\n")
             new_row['event_type'] = 'internal'
         
+        new_row['new_clock_time'] = self.logical_clock
         self.df.loc[len(self.df.index)] = new_row
 
 
     def run(self):
         # start a listen thread
+        data = self.client_socket.recv(2048)
+        if data.decode() != "START":
+            print('Bad start.')
+            exit_message = "exit"
+            self.client_socket.send(exit_message.encode())
+            self.client_socket.close()
+
         listener_thread = threading.Thread(target = self.listen, args = ())
         listener_thread.start()
         signal.signal(signal.SIGINT, self.signal_handler)
@@ -145,5 +155,5 @@ if __name__ == "__main__":
         print("Usage: client ID")
         sys.exit(1)
     port = 2000
-    run_no = 7
+    run_no = 9
     Client(port, int(sys.argv[1]), run_no).run()

@@ -19,22 +19,27 @@ class Server(object):
         self.sock.listen(2)
         while True:
             self.clients[0], self.addresses[0] = self.sock.accept()
+            print("Client 0 connected. Socket descriptor: " + str(self.clients[0]))
             
             self.clients[1], self.addresses[1] = self.sock.accept()
+            print("Client 1 connected. Socket descriptor: " + str(self.clients[1]))
 
             self.clients[2], self.addresses[2] = self.sock.accept()
+            print("Client 2 connected. Socket descriptor: " + str(self.clients[2]))
 
             # don't start until all 3 clients connected
 
             print("All 3 clients connected!")
 
-            print("Client 0 connected. Socket descriptor: " + str(self.clients[0]))
+            start_message = "START"
+
+            self.clients[0].send(start_message.encode())
             threading.Thread(target = self.handleClient,args = (self.clients[0], self.addresses[0], 0)).start()
 
-            print("Client 1 connected. Socket descriptor: " + str(self.clients[1]))
+            self.clients[1].send(start_message.encode())
             threading.Thread(target = self.handleClient,args = (self.clients[1], self.addresses[1], 1)).start()
             
-            print("Client 2 connected. Socket descriptor: " + str(self.clients[2]))
+            self.clients[2].send(start_message.encode())
             threading.Thread(target = self.handleClient,args = (self.clients[2], self.addresses[2], 2)).start()
     
     def handleClient(self, client, address, idx):
