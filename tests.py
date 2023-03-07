@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import MagicMock
-from logical_client import update_logical_clock as update_logical_clock
+from client import update_logical_clock as update_logical_clock
 
 class TestMethods(unittest.TestCase):
     def test_logical_clock_incremental(self):

@@ -7,6 +7,8 @@ from queue import Queue
 import sys
 import signal
 
+def update_logical_clock(curr_clock_val, received_val):
+    return max(curr_clock_val, received_val) + 1
 
 class Client(object):
     def __init__(self, port, id, run_no):
@@ -60,7 +62,7 @@ class Client(object):
 
         if not self.messages.empty():
             item = self.messages.get()
-            self.logical_clock = max(self.logical_clock, int(item.decode())) + 1
+            self.logical_clock = update_logical_clock(self.logical_clock, int(item.decode()))
             print('Updated logical clock value to be ' + str(self.logical_clock))
             self.f.write('Received a message that the logical clock time is ' + item.decode() + ". New logical clock time is " + str(self.logical_clock) + ". System time is " + curr_time + ". Length of message queue: " + str(self.messages.qsize()) + ".\n")
             return
@@ -74,26 +76,26 @@ class Client(object):
             self.client_socket.send(total_message.encode())
             self.f.write("Sent to machine 1 that the logical clock time is " \
                 + str(self.logical_clock) + ". The system time is " + curr_time + ".\n")
-            self.logical_clock += 1
+            self.logical_clock = update_logical_clock(self.logical_clock, 0)
 
         elif (random_num == 2):
             total_message = "2 " + str(self.logical_clock)
             self.client_socket.send(total_message.encode())
             self.f.write("Sent to machine 2 that the logical clock time is " \
                 + str(self.logical_clock) + ". The system time is " + curr_time + ".\n")
-            self.logical_clock += 1
+            self.logical_clock = update_logical_clock(self.logical_clock, 0)
 
         elif (random_num == 3):
             total_message = "3 " + str(self.logical_clock)
             self.client_socket.send(total_message.encode())
             self.f.write("Sent to both machines that the logical clock time is " \
                 + str(self.logical_clock) + ". The system time is " + curr_time + ".\n")
-            self.logical_clock += 1
+            self.logical_clock = update_logical_clock(self.logical_clock, 0)
 
         else:
             self.f.write("Internal event at system time " + curr_time + " and logical clock time " \
                 + str(self.logical_clock) + ".\n")
-            self.logical_clock += 1
+            self.logical_clock = update_logical_clock(self.logical_clock, 0)
 
     def run(self):
         # start a listen thread
