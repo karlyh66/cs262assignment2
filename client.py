@@ -16,6 +16,7 @@ class Client(object):
         self.logical_clock = 0
         self.incoming_clock = 0
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
         self.client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.client_socket.connect((self.host, self.port))  # connect to the server
         print("Connected to the server!")
@@ -29,14 +30,14 @@ class Client(object):
     def listen(self):
         # handle client receiving a new message from server:
         # client puts new message into the queue
-        data = self.client_socket.recv(1024) # receive the first response
+        data = self.client_socket.recv(2048) # receive the first response
         while data:
             print('Logical clock time received from server: ' + data.decode())  # show in terminal
             # self.f.write(data.decode() + "\n")
             self.messages.put(data)
 
             # wait to receive next response
-            data = self.client_socket.recv(1024)
+            data = self.client_socket.recv(2048)
 
     def clock_cycle(self):
         time.sleep(2 / self.rate)
@@ -47,8 +48,7 @@ class Client(object):
         if not self.messages.empty():
             item = self.messages.get()
             self.logical_clock = max(self.logical_clock, int(item.decode())) + 1
-            # self.logical_clock = int(item.decode()) + 1
-            print('Updated logical clock value to now be ' + str(self.logical_clock))
+            print('Updated logical clock value to be ' + str(self.logical_clock))
             self.f.write('Received a message that the logical clock time is ' + item.decode() + ". New logical clock time is " + str(self.logical_clock) + ". System time is " + curr_time + ". Length of message queue: " + str(self.messages.qsize()) + ".\n")
             return
 

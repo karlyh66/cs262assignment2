@@ -9,7 +9,8 @@ class Server(object):
         self.clients = [0, 0, 0]
         self.addresses = [None, None, None]
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        # self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
+        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.sock.bind((self.host, self.port))
 
     def listen(self):
@@ -25,7 +26,7 @@ class Server(object):
 
             # don't start until all 3 clients connected
 
-            print("All 3 cilents connected!")
+            print("All 3 clients connected!")
 
             print("Client 0 connected. Socket descriptor: " + str(self.clients[0]))
             threading.Thread(target = self.handleClient,args = (self.clients[0], self.addresses[0], 0)).start()
@@ -42,7 +43,8 @@ class Server(object):
         client1 = remaining_clients[0]
         print("Client 1 file descriptor: " + str(client1))
         client2 = remaining_clients[1]
-        size = 1024
+        print("Client 2 file descriptor: " + str(client2))
+        size = 2048
         while True:
             try:
                 data = client.recv(size)
