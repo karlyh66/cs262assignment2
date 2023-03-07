@@ -1,5 +1,18 @@
 # Report of Observations
 
+## Directions
+
+Run the scale model at least 5 times for at least one minute each time. Examine the logs, and discuss (in the lab book) the size of the jumps in the values for the logical clocks, drift in the values of the local logical clocks in the different machines (you can get a god’s eye view because of the system time), and the impact different timings on such things as gaps in the logical clock values and length of the message queue. Observations and reflections about the model and the results of running the model are more than welcome.
+
+## General Observations
+* In machines with faster rates (e.g. 5-6), the logical clock tends to update almost consecutively, which makes sense because it is executing so fast that the majority of its logical clock progressions come from its own actions, rather than catching up to other machines.
+* In machines with slower rates (e.g. 1-2), the logical clock tends to exhibit many jumps (the slower the rate relative to other machines, the larger the jumps), which makes sense because in between its slow operations, other machines are executing many operations and sending updates that it must catch up with.
+
+## Further Variations
+* We tried running the machines with a smaller variation in clock cycles,
+* We tried running the machines with a smaller probability of the event being internal by setting the event random generator to only values 1-4. For 1-3, messages are sent, and now only 4 (which we expect to happen ~25% of the time) generates an internal event.
+    * Observations
+
 ## Drift
 
 **Machine with rate 1:**
