@@ -31,3 +31,15 @@ Issues:
 TODOs:
 - Analyze log files in more detail
 - Find a nicer way to run the three programs that do not involve manually specifying the machine ID (1, 2, or 3), since that is less than ideal design
+
+
+March 7, 2023 
+=========================
+Progress:
+- found some bugs with not closing sockets properly when the client disconnects
+    - the specific bug we hit was a "broken pipe"
+    - because of us having spawned two threads per client, we need a signal handler the whole process responds to
+    - and we implemented this SIGINT signal handler in the client
+    - also implemented the functionality of when one client shuts down, the other two also shut down (while server stays up)
+- started analysis report
+- saved data not just in log.txt form but also in .csv form for easier and more versatile analysis

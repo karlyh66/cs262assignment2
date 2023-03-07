@@ -1,0 +1,11 @@
+New log started at system time 874222837
+Clock rate: 6
+Internal event at system time 1045615533 and logical clock time 1.
+Internal event at system time 1220491648 and logical clock time 2.
+Internal event at system time 1394318884 and logical clock time 3.
+Sent to both machines that the logical clock time is 4. The system time is 1566215466.
+Internal event at system time 1738577119 and logical clock time 5.
+Sent to both machines that the logical clock time is 6. The system time is 1908527151.
+Sent to machine 1 that the logical clock time is 7. The system time is 2081272437.
+Internal event at system time 2253794601 and logical clock time 8.
+Internal event at system time 2426990132 and logical clock time 9.

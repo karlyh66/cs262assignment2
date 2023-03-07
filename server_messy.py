@@ -28,13 +28,13 @@ class Server(object):
 
             print("All 3 clients connected!")
 
-            print("Client 0 connected. Socket descriptor: " + str(self.clients[0]))
+            print("Client 1 connected. Socket descriptor: " + str(self.clients[0]))
             threading.Thread(target = self.handleClient,args = (self.clients[0], self.addresses[0], 0)).start()
 
-            print("Client 1 connected. Socket descriptor: " + str(self.clients[1]))
+            print("Client 2 connected. Socket descriptor: " + str(self.clients[1]))
             threading.Thread(target = self.handleClient,args = (self.clients[1], self.addresses[1], 1)).start()
             
-            print("Client 2 connected. Socket descriptor: " + str(self.clients[2]))
+            print("Client 3 connected. Socket descriptor: " + str(self.clients[2]))
             threading.Thread(target = self.handleClient,args = (self.clients[2], self.addresses[2], 2)).start()
     
     def handleClient(self, client, address, idx):
@@ -46,29 +46,32 @@ class Server(object):
         print("Client 2 file descriptor: " + str(client2))
         size = 2048
         while True:
-            data = client.recv(size)
-            if data.decode() == "exit":
-                    print("a client disconnected")
-                    exit_message = "exit"
-                    client1.send(exit_message.encode())
-                    client2.send(exit_message.encode())
-                    # self.sock.close()
-                    return
-            if data:
+            try:
+                data = client.recv(size)
+                # if data.decode() == "exit":
+                #     print("a client disconnected")
+                #     exit_message = "exit"
+                #     client1.send(exit_message.encode())
+                #     client2.send(exit_message.encode())
+                if data:
                     # Set the response to echo back the recieved data 
-                # response = data
-                # client1.send(response)
-                # client2.send(response)
-                print("data: " + data.decode())
-                recipient, clock_val = data.decode().split()
-                print("recipient :" + recipient)
-                print("clock val :" + clock_val)
-                if recipient == "1" or recipient == "3":
-                    print("Client 1 file descriptor: " + str(client1))
-                    client1.send(clock_val.encode())
-                if recipient == "2" or recipient == "3":
-                    print("Client 2 file descriptor: " + str(client2))
-                    client2.send(clock_val.encode())
+                    # response = data
+                    # client1.send(response)
+                    # client2.send(response)
+                    print("message:" + data.decode())
+                    recipient, clock_val = data.decode().split()
+                    print("recipient: " + recipient)
+                    print("clock val: " + clock_val)
+                    if recipient == "1" or recipient == "3":
+                        client1.send(clock_val.encode())
+                    if recipient == "2" or recipient == "3":
+                        client2.send(clock_val.encode())
+                else:
+                    raise error('A client disconnected')
+            except:
+                client.close()
+                return False
+
 
 
 if __name__ == "__main__":

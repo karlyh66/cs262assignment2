@@ -36,10 +36,10 @@ class Client(object):
 
     def signal_handler(self, sig, frame):
         print('You pressed Ctrl+C!')
+        self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)))
         exit_message = "exit"
         self.client_socket.send(exit_message.encode())
         self.client_socket.close()
-        self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)), "w")
         sys.exit(0)
 
     def listen(self):
@@ -49,8 +49,8 @@ class Client(object):
         while True:
             if data.decode() == "exit":
                 # when another machine exits, this one should too
+                self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)))
                 self.client_socket.close()
-                self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)), "w")
                 return
             print('Logical clock time received from server: ' + data.decode())  # show in terminal
             # self.f.write(data.decode() + "\n")
@@ -110,7 +110,6 @@ class Client(object):
             self.f.write("Internal event at system time " + curr_time + " and logical clock time " \
                 + str(self.logical_clock) + ".\n")
             new_row['event_type'] = 'internal'
-        
         self.df.loc[len(self.df.index)] = new_row
 
 
@@ -144,5 +143,5 @@ if __name__ == "__main__":
         print("Usage: client ID")
         sys.exit(1)
     port = 2000
-    run_no = 8
+    run_no = 7
     Client(port, int(sys.argv[1]), run_no).run()
