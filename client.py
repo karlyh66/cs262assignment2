@@ -5,42 +5,55 @@ from datetime import datetime
 import random
 from queue import Queue
 import sys
+import signal
+
 
 class Client(object):
-    def __init__(self, port, id):
+    def __init__(self, port, id, run_no):
         self.host = socket.gethostname()
         self.port = port
         self.id = id
+        self.run_no = run_no
         self.rate = random.randint(1, 6)
         self.messages = Queue()
         self.logical_clock = 0
         self.incoming_clock = 0
         self.client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
+        # self.client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
         self.client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.client_socket.connect((self.host, self.port))  # connect to the server
         print("Connected to the server!")
         print("Rate: " + str(self.rate))
 
         # open and start writing into a log file
-        self.f = open("log{}.txt".format(str(self.id)), "w")
+        self.f = open("log{}_{}.txt".format(str(self.id), str(self.run_no)), "w")
         self.f.write("New log started at system time " + str(time.monotonic_ns()) + "\n")
         self.f.write("Clock rate: " + str(self.rate) + "\n")
+
+    def signal_handler(self, sig, frame):
+        print('You pressed Ctrl+C!')
+        exit_message = "exit"
+        self.client_socket.send(exit_message.encode())
+        self.client_socket.close()
+        sys.exit(0)
 
     def listen(self):
         # handle client receiving a new message from server:
         # client puts new message into the queue
         data = self.client_socket.recv(2048) # receive the first response
-        while data:
+        while True:
+            if data.decode() == "exit":
+                # when another machine exits, this one should too
+                self.client_socket.close()
+                return
             print('Logical clock time received from server: ' + data.decode())  # show in terminal
             # self.f.write(data.decode() + "\n")
             self.messages.put(data)
-
             # wait to receive next response
             data = self.client_socket.recv(2048)
 
     def clock_cycle(self):
-        time.sleep(2 / self.rate)
+        time.sleep(1 / self.rate)
         # log that the client took a message off the queue
         # handle updating the logical clock time
         curr_time = str(time.monotonic_ns())
@@ -86,6 +99,7 @@ class Client(object):
         # start a listen thread
         listener_thread = threading.Thread(target = self.listen, args = ())
         listener_thread.start()
+        signal.signal(signal.SIGINT, self.signal_handler)
 
         # replace this with clock_cycle() function calls (x times/sec)
         # message = input(" >> ")
@@ -110,5 +124,6 @@ if __name__ == "__main__":
     if len(sys.argv) != 2 or sys.argv[1] not in ['1', '2', '3']:
         print("Usage: client ID")
         sys.exit(1)
-    port = 6000
-    Client(port, int(sys.argv[1])).run()
+    port = 2000
+    run_no = 4
+    Client(port, int(sys.argv[1]), run_no).run()

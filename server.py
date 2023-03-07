@@ -9,7 +9,7 @@ class Server(object):
         self.clients = [0, 0, 0]
         self.addresses = [None, None, None]
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
+        # self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
         self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.sock.bind((self.host, self.port))
 
@@ -46,28 +46,32 @@ class Server(object):
         print("Client 2 file descriptor: " + str(client2))
         size = 2048
         while True:
-            try:
-                data = client.recv(size)
-                if data:
-                    # Set the response to echo back the recieved data 
-                    # response = data
-                    # client1.send(response)
-                    # client2.send(response)
-                    print(data.decode())
-                    recipient, clock_val = data.decode().split()
-                    print("recipient:" + recipient)
-                    print("clock val:" + clock_val)
-                    if recipient == "1" or recipient == "3":
-                        client1.send(clock_val.encode())
-                    if recipient == "2" or recipient == "3":
-                        client2.send(clock_val.encode())
-                else:
-                    raise error('A client disconnected')
-            except:
-                client.close()
-                return False
+            data = client.recv(size)
+            if data.decode() == "exit":
+                print("a client disconnected")
+                exit_message = "exit"
+                client1.send(exit_message.encode())
+                client2.send(exit_message.encode())
+                # self.sock.close()
+                return
+            if data:
+                # Set the response to echo back the recieved data 
+                # response = data
+                # client1.send(response)
+                # client2.send(response)
+                print(data.decode())
+                recipient, clock_val = data.decode().split()
+                print("recipient:" + recipient)
+                print("clock val:" + clock_val)
+                if recipient == "1" or recipient == "3":
+                    print("Client 1 file descriptor: " + str(client1))
+                    client1.send(clock_val.encode())
+                if recipient == "2" or recipient == "3":
+                    print("Client 2 file descriptor: " + str(client2))
+                    client2.send(clock_val.encode())
+
 
 
 if __name__ == "__main__":
-    port = 6000
+    port = 2000
     Server(port).listen()
