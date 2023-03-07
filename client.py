@@ -31,7 +31,7 @@ class Client(object):
         # client puts new message into the queue
         data = self.client_socket.recv(1024) # receive the first response
         while data:
-            # print('Logical clock time received from server is ' + data.decode())  # show in terminal
+            print('Logical clock time received from server: ' + data.decode())  # show in terminal
             # self.f.write(data.decode() + "\n")
             self.messages.put(data)
 
@@ -39,7 +39,6 @@ class Client(object):
             data = self.client_socket.recv(1024)
 
     def clock_cycle(self):
-        # change to 1 / self.rate later
         time.sleep(2 / self.rate)
         # log that the client took a message off the queue
         # handle updating the logical clock time
@@ -83,16 +82,22 @@ class Client(object):
                 + str(self.logical_clock) + ".\n")
             self.logical_clock += 1
 
-        print('Updated logical clock value to now be ' + str(self.logical_clock))
-
     def run(self):
         # start a listen thread
         listener_thread = threading.Thread(target = self.listen, args = ())
         listener_thread.start()
 
+        # replace this with clock_cycle() function calls (x times/sec)
+        # message = input(" >> ")
+        # curr_time = time.time()
         while True:
-            # handle everything in the clock_cycle() function
+            # 1/self.rate seconds go by between each step / "action" in the process
+            # right now, the action is very arbitrarily just sending the current time to all the other processes
             self.clock_cycle()
+            # # self.client_socket.send(message.encode())  # send message
+            # message = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+            # # message = input(" >> ")  # again take input
+            # self.client_socket.send(message.encode())  # send message
 
         # there is an error with how we exit out of this thread, since
         # there is no python equivalent for c++'s thread.detach() function
