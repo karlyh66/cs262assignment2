@@ -1,8 +1,0 @@
-New log started at system time 46957808
-Clock rate: 5
-Received a message that the logical clock time is 0. New logical clock time is 1. System time is 251058022. Length of message queue: 1.
-Received a message that the logical clock time is 4. New logical clock time is 5. System time is 455282005. Length of message queue: 0.
-Internal event at system time 659990334 and logical clock time 5.
-Internal event at system time 864923786 and logical clock time 6.
-Internal event at system time 1067189861 and logical clock time 7.
-Sent to both machines that the logical clock time is 8. The system time is 1271897473.

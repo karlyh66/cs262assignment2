@@ -39,7 +39,7 @@ class Client(object):
         exit_message = "exit"
         self.client_socket.send(exit_message.encode())
         self.client_socket.close()
-        self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)), "w")
+        self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)))
         sys.exit(0)
 
     def listen(self):
@@ -50,7 +50,7 @@ class Client(object):
             if data.decode() == "exit":
                 # when another machine exits, this one should too
                 self.client_socket.close()
-                self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)), "w")
+                self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)))
                 return
             print('Logical clock time received from server: ' + data.decode())  # show in terminal
             # self.f.write(data.decode() + "\n")
@@ -77,6 +77,7 @@ class Client(object):
             print('Updated logical clock value to be ' + str(self.logical_clock))
             self.f.write('Received a message that the logical clock time is ' + item.decode() + ". New logical clock time is " + str(self.logical_clock) + ". System time is " + curr_time + ". Length of message queue: " + str(self.messages.qsize()) + ".\n")
             new_row['event_type'] = 'receive'
+            new_row['message_queue_length'] = self.messages.qsize()
             self.df.loc[len(self.df.index)] = new_row
             return
 
@@ -144,5 +145,5 @@ if __name__ == "__main__":
         print("Usage: client ID")
         sys.exit(1)
     port = 2000
-    run_no = 8
+    run_no = 7
     Client(port, int(sys.argv[1]), run_no).run()

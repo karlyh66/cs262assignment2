@@ -1,0 +1,908 @@
+New log started at system time 730215625
+Clock rate: 4
+Received a message that the logical clock time is 4. New logical clock time is 5. System time is 982735536. Length of message queue: 0.
+Internal event at system time 1237159020 and logical clock time 6.
+Internal event at system time 1493954043 and logical clock time 7.
+Internal event at system time 1749532627 and logical clock time 8.
+Received a message that the logical clock time is 7. New logical clock time is 9. System time is 2009500938. Length of message queue: 0.
+Sent to machine 2 that the logical clock time is 10. The system time is 2268806246.
+Sent to machine 1 that the logical clock time is 11. The system time is 2524082302.
+Sent to both machines that the logical clock time is 12. The system time is 2778585019.
+Internal event at system time 3032738259 and logical clock time 13.
+Sent to machine 2 that the logical clock time is 14. The system time is 3289366200.
+Sent to both machines that the logical clock time is 15. The system time is 3545327363.
+Internal event at system time 3798175782 and logical clock time 16.
+Received a message that the logical clock time is 17. New logical clock time is 18. System time is 4056425997. Length of message queue: 0.
+Internal event at system time 4314343791 and logical clock time 19.
+Received a message that the logical clock time is 18. New logical clock time is 20. System time is 4570381498. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 21. The system time is 4827146104.
+Internal event at system time 5082837551 and logical clock time 22.
+Internal event at system time 5343795339 and logical clock time 23.
+Sent to machine 1 that the logical clock time is 24. The system time is 5599516354.
+Internal event at system time 5854540337 and logical clock time 25.
+Internal event at system time 6113083787 and logical clock time 26.
+Internal event at system time 6370598978 and logical clock time 27.
+Received a message that the logical clock time is 24. New logical clock time is 28. System time is 6626976011. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 29. The system time is 6885146830.
+Internal event at system time 7139259351 and logical clock time 30.
+Sent to both machines that the logical clock time is 31. The system time is 7399391590.
+Internal event at system time 7657420413 and logical clock time 32.
+Internal event at system time 7916118486 and logical clock time 33.
+Internal event at system time 8173597583 and logical clock time 34.
+Internal event at system time 8432773326 and logical clock time 35.
+Sent to machine 1 that the logical clock time is 36. The system time is 8689097063.
+Received a message that the logical clock time is 36. New logical clock time is 37. System time is 8946774946. Length of message queue: 0.
+Internal event at system time 9204636148 and logical clock time 38.
+Internal event at system time 9461922845 and logical clock time 39.
+Sent to machine 2 that the logical clock time is 40. The system time is 9718763408.
+Sent to both machines that the logical clock time is 41. The system time is 9974915154.
+Sent to both machines that the logical clock time is 42. The system time is 10232624484.
+Internal event at system time 10487408141 and logical clock time 43.
+Sent to machine 2 that the logical clock time is 44. The system time is 10743640132.
+Internal event at system time 10999240618 and logical clock time 45.
+Internal event at system time 11254077086 and logical clock time 46.
+Sent to machine 2 that the logical clock time is 47. The system time is 11509490354.
+Internal event at system time 11766479612 and logical clock time 48.
+Internal event at system time 12026158389 and logical clock time 49.
+Internal event at system time 12282624755 and logical clock time 50.
+Sent to machine 1 that the logical clock time is 51. The system time is 12538636934.
+Internal event at system time 12796355739 and logical clock time 52.
+Received a message that the logical clock time is 52. New logical clock time is 53. System time is 13049257159. Length of message queue: 0.
+Internal event at system time 13305943366 and logical clock time 54.
+Internal event at system time 13562896316 and logical clock time 55.
+Sent to both machines that the logical clock time is 56. The system time is 13818887679.
+Internal event at system time 14078252137 and logical clock time 57.
+Received a message that the logical clock time is 58. New logical clock time is 59. System time is 14334361833. Length of message queue: 0.
+Internal event at system time 14590750341 and logical clock time 60.
+Internal event at system time 14845758001 and logical clock time 61.
+Internal event at system time 15102558408 and logical clock time 62.
+Sent to machine 1 that the logical clock time is 63. The system time is 15359330506.
+Internal event at system time 15615916965 and logical clock time 64.
+Sent to both machines that the logical clock time is 65. The system time is 15869991925.
+Sent to machine 2 that the logical clock time is 66. The system time is 16123605178.
+Sent to both machines that the logical clock time is 67. The system time is 16380787285.
+Internal event at system time 16637714618 and logical clock time 68.
+Sent to both machines that the logical clock time is 69. The system time is 16890081810.
+Internal event at system time 17145234894 and logical clock time 70.
+Internal event at system time 17400356645 and logical clock time 71.
+Sent to machine 2 that the logical clock time is 72. The system time is 17655323650.
+Internal event at system time 17909324974 and logical clock time 73.
+Sent to machine 2 that the logical clock time is 74. The system time is 18165886473.
+Internal event at system time 18422289043 and logical clock time 75.
+Sent to machine 2 that the logical clock time is 76. The system time is 18680818032.
+Internal event at system time 18933373598 and logical clock time 77.
+Internal event at system time 19190200486 and logical clock time 78.
+Received a message that the logical clock time is 78. New logical clock time is 79. System time is 19445835007. Length of message queue: 0.
+Internal event at system time 19699234934 and logical clock time 80.
+Sent to both machines that the logical clock time is 81. The system time is 19954562005.
+Internal event at system time 20215207987 and logical clock time 82.
+Sent to machine 1 that the logical clock time is 83. The system time is 20470996956.
+Received a message that the logical clock time is 84. New logical clock time is 85. System time is 20730450139. Length of message queue: 0.
+Internal event at system time 20990115213 and logical clock time 86.
+Internal event at system time 21249274925 and logical clock time 87.
+Internal event at system time 21507459810 and logical clock time 88.
+Internal event at system time 21765948065 and logical clock time 89.
+Internal event at system time 22025081308 and logical clock time 90.
+Received a message that the logical clock time is 88. New logical clock time is 91. System time is 22282459088. Length of message queue: 0.
+Internal event at system time 22538039935 and logical clock time 92.
+Received a message that the logical clock time is 90. New logical clock time is 93. System time is 22793316329. Length of message queue: 0.
+Internal event at system time 23049403178 and logical clock time 94.
+Internal event at system time 23309460258 and logical clock time 95.
+Sent to machine 2 that the logical clock time is 96. The system time is 23566740227.
+Internal event at system time 23823292685 and logical clock time 97.
+Internal event at system time 24078649866 and logical clock time 98.
+Sent to both machines that the logical clock time is 99. The system time is 24332523108.
+Sent to machine 1 that the logical clock time is 100. The system time is 24589621655.
+Received a message that the logical clock time is 101. New logical clock time is 102. System time is 24847420931. Length of message queue: 0.
+Internal event at system time 25101308656 and logical clock time 103.
+Internal event at system time 25358132407 and logical clock time 104.
+Received a message that the logical clock time is 103. New logical clock time is 105. System time is 25611806851. Length of message queue: 0.
+Internal event at system time 25867332712 and logical clock time 106.
+Internal event at system time 26123717530 and logical clock time 107.
+Sent to machine 2 that the logical clock time is 108. The system time is 26377723367.
+Internal event at system time 26632410524 and logical clock time 109.
+Internal event at system time 26886872185 and logical clock time 110.
+Internal event at system time 27140224940 and logical clock time 111.
+Internal event at system time 27396324238 and logical clock time 112.
+Internal event at system time 27649272854 and logical clock time 113.
+Internal event at system time 27904396915 and logical clock time 114.
+Sent to both machines that the logical clock time is 115. The system time is 28160086182.
+Sent to machine 1 that the logical clock time is 116. The system time is 28416996655.
+Internal event at system time 28673228079 and logical clock time 117.
+Sent to both machines that the logical clock time is 118. The system time is 28927003160.
+Internal event at system time 29185364204 and logical clock time 119.
+Internal event at system time 29440679881 and logical clock time 120.
+Sent to both machines that the logical clock time is 121. The system time is 29696947224.
+Internal event at system time 29952944933 and logical clock time 122.
+Sent to both machines that the logical clock time is 123. The system time is 30209342868.
+Internal event at system time 30465683428 and logical clock time 124.
+Internal event at system time 30721601367 and logical clock time 125.
+Internal event at system time 30976958809 and logical clock time 126.
+Sent to machine 2 that the logical clock time is 127. The system time is 31232405479.
+Sent to machine 2 that the logical clock time is 128. The system time is 31488185851.
+Sent to machine 1 that the logical clock time is 129. The system time is 31743662814.
+Internal event at system time 31998975075 and logical clock time 130.
+Received a message that the logical clock time is 130. New logical clock time is 131. System time is 32255917937. Length of message queue: 0.
+Internal event at system time 32509335719 and logical clock time 132.
+Sent to machine 2 that the logical clock time is 133. The system time is 32765604710.
+Internal event at system time 33021269007 and logical clock time 134.
+Sent to machine 1 that the logical clock time is 135. The system time is 33275054124.
+Internal event at system time 33532295583 and logical clock time 136.
+Internal event at system time 33788606224 and logical clock time 137.
+Internal event at system time 34049166011 and logical clock time 138.
+Sent to machine 1 that the logical clock time is 139. The system time is 34306479771.
+Sent to machine 2 that the logical clock time is 140. The system time is 34562722215.
+Internal event at system time 34821359317 and logical clock time 141.
+Internal event at system time 35076134567 and logical clock time 142.
+Internal event at system time 35332347440 and logical clock time 143.
+Internal event at system time 35588050996 and logical clock time 144.
+Internal event at system time 35846102709 and logical clock time 145.
+Internal event at system time 36103040912 and logical clock time 146.
+Internal event at system time 36361254382 and logical clock time 147.
+Sent to machine 2 that the logical clock time is 148. The system time is 36616869036.
+Sent to machine 1 that the logical clock time is 149. The system time is 36870655679.
+Internal event at system time 37127242808 and logical clock time 150.
+Sent to machine 2 that the logical clock time is 151. The system time is 37382446813.
+Internal event at system time 37640486111 and logical clock time 152.
+Sent to machine 2 that the logical clock time is 153. The system time is 37896525189.
+Sent to both machines that the logical clock time is 154. The system time is 38152160374.
+Internal event at system time 38405136131 and logical clock time 155.
+Sent to both machines that the logical clock time is 156. The system time is 38661319418.
+Sent to machine 1 that the logical clock time is 157. The system time is 38918594612.
+Internal event at system time 39175412996 and logical clock time 158.
+Internal event at system time 39430457263 and logical clock time 159.
+Internal event at system time 39685748817 and logical clock time 160.
+Internal event at system time 39937333337 and logical clock time 161.
+Internal event at system time 40192095810 and logical clock time 162.
+Internal event at system time 40448883940 and logical clock time 163.
+Internal event at system time 40706008015 and logical clock time 164.
+Received a message that the logical clock time is 163. New logical clock time is 165. System time is 40961933002. Length of message queue: 0.
+Internal event at system time 41215627630 and logical clock time 166.
+Internal event at system time 41469255821 and logical clock time 167.
+Internal event at system time 41721924381 and logical clock time 168.
+Received a message that the logical clock time is 166. New logical clock time is 169. System time is 41978191492. Length of message queue: 0.
+Internal event at system time 42232328969 and logical clock time 170.
+Internal event at system time 42487822887 and logical clock time 171.
+Internal event at system time 42743679366 and logical clock time 172.
+Received a message that the logical clock time is 169. New logical clock time is 173. System time is 42998851606. Length of message queue: 0.
+Received a message that the logical clock time is 170. New logical clock time is 174. System time is 43256063672. Length of message queue: 0.
+Internal event at system time 43511878939 and logical clock time 175.
+Internal event at system time 43767603975 and logical clock time 176.
+Sent to machine 2 that the logical clock time is 177. The system time is 44024120061.
+Internal event at system time 44282111603 and logical clock time 178.
+Internal event at system time 44536263062 and logical clock time 179.
+Sent to machine 2 that the logical clock time is 180. The system time is 44792628244.
+Internal event at system time 45048866408 and logical clock time 181.
+Internal event at system time 45305669387 and logical clock time 182.
+Internal event at system time 45562040382 and logical clock time 183.
+Sent to machine 1 that the logical clock time is 184. The system time is 45816732434.
+Internal event at system time 46069340717 and logical clock time 185.
+Internal event at system time 46321050761 and logical clock time 186.
+Sent to machine 1 that the logical clock time is 187. The system time is 46578232485.
+Internal event at system time 46832088265 and logical clock time 188.
+Sent to machine 2 that the logical clock time is 189. The system time is 47085395967.
+Internal event at system time 47338371197 and logical clock time 190.
+Received a message that the logical clock time is 191. New logical clock time is 192. System time is 47592317082. Length of message queue: 0.
+Internal event at system time 47848726895 and logical clock time 193.
+Internal event at system time 48105134475 and logical clock time 194.
+Internal event at system time 48360322571 and logical clock time 195.
+Sent to machine 2 that the logical clock time is 196. The system time is 48617315243.
+Internal event at system time 48871231052 and logical clock time 197.
+Sent to machine 2 that the logical clock time is 198. The system time is 49128935215.
+Internal event at system time 49386185103 and logical clock time 199.
+Internal event at system time 49638899300 and logical clock time 200.
+Sent to machine 1 that the logical clock time is 201. The system time is 49893255633.
+Internal event at system time 50149006222 and logical clock time 202.
+Sent to machine 2 that the logical clock time is 203. The system time is 50402800754.
+Internal event at system time 50659525083 and logical clock time 204.
+Internal event at system time 50919119842 and logical clock time 205.
+Sent to machine 1 that the logical clock time is 206. The system time is 51174400671.
+Internal event at system time 51432343302 and logical clock time 207.
+Internal event at system time 51685862845 and logical clock time 208.
+Received a message that the logical clock time is 208. New logical clock time is 209. System time is 51942743558. Length of message queue: 0.
+Internal event at system time 52201057232 and logical clock time 210.
+Internal event at system time 52457778798 and logical clock time 211.
+Received a message that the logical clock time is 210. New logical clock time is 212. System time is 52717471320. Length of message queue: 0.
+Internal event at system time 52976001954 and logical clock time 213.
+Internal event at system time 53232962247 and logical clock time 214.
+Internal event at system time 53487364064 and logical clock time 215.
+Received a message that the logical clock time is 213. New logical clock time is 216. System time is 53744751070. Length of message queue: 0.
+Internal event at system time 54004958520 and logical clock time 217.
+Sent to both machines that the logical clock time is 218. The system time is 54264862881.
+Internal event at system time 54522463421 and logical clock time 219.
+Received a message that the logical clock time is 220. New logical clock time is 221. System time is 54782098456. Length of message queue: 0.
+Sent to machine 2 that the logical clock time is 222. The system time is 55035543931.
+Internal event at system time 55293663098 and logical clock time 223.
+Sent to machine 1 that the logical clock time is 224. The system time is 55548842478.
+Internal event at system time 55809342907 and logical clock time 225.
+Received a message that the logical clock time is 225. New logical clock time is 226. System time is 56065983540. Length of message queue: 0.
+Internal event at system time 56320620472 and logical clock time 227.
+Sent to machine 1 that the logical clock time is 228. The system time is 56574959214.
+Internal event at system time 56833587068 and logical clock time 229.
+Internal event at system time 57085168082 and logical clock time 230.
+Internal event at system time 57340106541 and logical clock time 231.
+Internal event at system time 57593909711 and logical clock time 232.
+Internal event at system time 57849347832 and logical clock time 233.
+Internal event at system time 58103069655 and logical clock time 234.
+Internal event at system time 58359342053 and logical clock time 235.
+Received a message that the logical clock time is 232. New logical clock time is 236. System time is 58615613882. Length of message queue: 0.
+Internal event at system time 58868747590 and logical clock time 237.
+Received a message that the logical clock time is 234. New logical clock time is 238. System time is 59125993653. Length of message queue: 0.
+Internal event at system time 59379215471 and logical clock time 239.
+Internal event at system time 59632200342 and logical clock time 240.
+Received a message that the logical clock time is 236. New logical clock time is 241. System time is 59888536910. Length of message queue: 0.
+Internal event at system time 60144144349 and logical clock time 242.
+Internal event at system time 60401348895 and logical clock time 243.
+Internal event at system time 60653693717 and logical clock time 244.
+Received a message that the logical clock time is 239. New logical clock time is 245. System time is 60909326603. Length of message queue: 0.
+Internal event at system time 61165369499 and logical clock time 246.
+Internal event at system time 61419981347 and logical clock time 247.
+Sent to machine 1 that the logical clock time is 248. The system time is 61675738153.
+Internal event at system time 61931119999 and logical clock time 249.
+Sent to both machines that the logical clock time is 250. The system time is 62189594790.
+Internal event at system time 62447817342 and logical clock time 251.
+Internal event at system time 62706484931 and logical clock time 252.
+Sent to both machines that the logical clock time is 253. The system time is 62962754733.
+Internal event at system time 63217525084 and logical clock time 254.
+Internal event at system time 63472138221 and logical clock time 255.
+Sent to both machines that the logical clock time is 256. The system time is 63729297722.
+Sent to both machines that the logical clock time is 257. The system time is 63985006243.
+Internal event at system time 64244299431 and logical clock time 258.
+Received a message that the logical clock time is 259. New logical clock time is 260. System time is 64498554083. Length of message queue: 0.
+Internal event at system time 64753487898 and logical clock time 261.
+Internal event at system time 65015388348 and logical clock time 262.
+Sent to machine 1 that the logical clock time is 263. The system time is 65267181761.
+Sent to both machines that the logical clock time is 264. The system time is 65523708574.
+Internal event at system time 65779703581 and logical clock time 265.
+Internal event at system time 66034447682 and logical clock time 266.
+Internal event at system time 66289977545 and logical clock time 267.
+Internal event at system time 66548577354 and logical clock time 268.
+Internal event at system time 66808245194 and logical clock time 269.
+Internal event at system time 67061940906 and logical clock time 270.
+Internal event at system time 67317508214 and logical clock time 271.
+Internal event at system time 67572442079 and logical clock time 272.
+Internal event at system time 67830264317 and logical clock time 273.
+Internal event at system time 68086282053 and logical clock time 274.
+Received a message that the logical clock time is 272. New logical clock time is 275. System time is 68342455715. Length of message queue: 0.
+Internal event at system time 68598809812 and logical clock time 276.
+Sent to both machines that the logical clock time is 277. The system time is 68853521128.
+Internal event at system time 69109476770 and logical clock time 278.
+Internal event at system time 69365106625 and logical clock time 279.
+Internal event at system time 69622281402 and logical clock time 280.
+Internal event at system time 69878405048 and logical clock time 281.
+Internal event at system time 70132929779 and logical clock time 282.
+Internal event at system time 70387330350 and logical clock time 283.
+Sent to machine 2 that the logical clock time is 284. The system time is 70640861639.
+Sent to machine 1 that the logical clock time is 285. The system time is 70898491130.
+Sent to both machines that the logical clock time is 286. The system time is 71152561232.
+Internal event at system time 71409334059 and logical clock time 287.
+Received a message that the logical clock time is 288. New logical clock time is 289. System time is 71665093759. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 290. The system time is 71920928609.
+Internal event at system time 72177437293 and logical clock time 291.
+Internal event at system time 72433421749 and logical clock time 292.
+Received a message that the logical clock time is 291. New logical clock time is 293. System time is 72689950955. Length of message queue: 0.
+Sent to machine 2 that the logical clock time is 294. The system time is 72947322346.
+Internal event at system time 73205404103 and logical clock time 295.
+Internal event at system time 73460961750 and logical clock time 296.
+Sent to machine 1 that the logical clock time is 297. The system time is 73715049845.
+Internal event at system time 73970630191 and logical clock time 298.
+Internal event at system time 74224193585 and logical clock time 299.
+Internal event at system time 74480344147 and logical clock time 300.
+Sent to both machines that the logical clock time is 301. The system time is 74735215424.
+Internal event at system time 74989128413 and logical clock time 302.
+Internal event at system time 75243900961 and logical clock time 303.
+Internal event at system time 75498469680 and logical clock time 304.
+Internal event at system time 75751176744 and logical clock time 305.
+Internal event at system time 76003714410 and logical clock time 306.
+Internal event at system time 76261147351 and logical clock time 307.
+Internal event at system time 76516325833 and logical clock time 308.
+Internal event at system time 76773454903 and logical clock time 309.
+Internal event at system time 77030346473 and logical clock time 310.
+Internal event at system time 77286812696 and logical clock time 311.
+Sent to both machines that the logical clock time is 312. The system time is 77541163150.
+Internal event at system time 77798333437 and logical clock time 313.
+Sent to machine 2 that the logical clock time is 314. The system time is 78052518896.
+Internal event at system time 78307249537 and logical clock time 315.
+Internal event at system time 78561901591 and logical clock time 316.
+Internal event at system time 78815037422 and logical clock time 317.
+Internal event at system time 79069415291 and logical clock time 318.
+Internal event at system time 79322790565 and logical clock time 319.
+Sent to machine 1 that the logical clock time is 320. The system time is 79580313218.
+Internal event at system time 79835555780 and logical clock time 321.
+Received a message that the logical clock time is 320. New logical clock time is 322. System time is 80089473787. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 323. The system time is 80344256116.
+Received a message that the logical clock time is 321. New logical clock time is 324. System time is 80601285853. Length of message queue: 0.
+Internal event at system time 80859447518 and logical clock time 325.
+Internal event at system time 81114937943 and logical clock time 326.
+Internal event at system time 81368712240 and logical clock time 327.
+Internal event at system time 81625933244 and logical clock time 328.
+Internal event at system time 81883293097 and logical clock time 329.
+Internal event at system time 82138928252 and logical clock time 330.
+Sent to machine 1 that the logical clock time is 331. The system time is 82394053973.
+Internal event at system time 82651881681 and logical clock time 332.
+Internal event at system time 82909393350 and logical clock time 333.
+Internal event at system time 83165442827 and logical clock time 334.
+Internal event at system time 83423871383 and logical clock time 335.
+Sent to machine 2 that the logical clock time is 336. The system time is 83683256253.
+Internal event at system time 83937234796 and logical clock time 337.
+Received a message that the logical clock time is 338. New logical clock time is 339. System time is 84196678627. Length of message queue: 0.
+Sent to machine 2 that the logical clock time is 340. The system time is 84454822492.
+Sent to both machines that the logical clock time is 341. The system time is 84715145718.
+Sent to machine 2 that the logical clock time is 342. The system time is 84971720329.
+Internal event at system time 85231285581 and logical clock time 343.
+Internal event at system time 85484925081 and logical clock time 344.
+Internal event at system time 85738777780 and logical clock time 345.
+Received a message that the logical clock time is 345. New logical clock time is 346. System time is 85998342306. Length of message queue: 0.
+Internal event at system time 86256632085 and logical clock time 347.
+Internal event at system time 86514903527 and logical clock time 348.
+Internal event at system time 86770377117 and logical clock time 349.
+Internal event at system time 87031432093 and logical clock time 350.
+Received a message that the logical clock time is 349. New logical clock time is 351. System time is 87288065120. Length of message queue: 0.
+Internal event at system time 87542590356 and logical clock time 352.
+Received a message that the logical clock time is 350. New logical clock time is 353. System time is 87798595702. Length of message queue: 0.
+Received a message that the logical clock time is 351. New logical clock time is 354. System time is 88052553087. Length of message queue: 0.
+Received a message that the logical clock time is 352. New logical clock time is 355. System time is 88309364051. Length of message queue: 0.
+Sent to both machines that the logical clock time is 356. The system time is 88564869370.
+Internal event at system time 88820679293 and logical clock time 357.
+Sent to machine 2 that the logical clock time is 358. The system time is 89074760622.
+Internal event at system time 89331313402 and logical clock time 359.
+Internal event at system time 89585396309 and logical clock time 360.
+Internal event at system time 89838099970 and logical clock time 361.
+Received a message that the logical clock time is 361. New logical clock time is 362. System time is 90093471334. Length of message queue: 0.
+Sent to both machines that the logical clock time is 363. The system time is 90345228457.
+Internal event at system time 90602499663 and logical clock time 364.
+Sent to machine 2 that the logical clock time is 365. The system time is 90859330049.
+Internal event at system time 91114849643 and logical clock time 366.
+Received a message that the logical clock time is 367. New logical clock time is 368. System time is 91368912865. Length of message queue: 0.
+Internal event at system time 91621904189 and logical clock time 369.
+Internal event at system time 91878699400 and logical clock time 370.
+Internal event at system time 92134830042 and logical clock time 371.
+Sent to machine 1 that the logical clock time is 372. The system time is 92386756395.
+Internal event at system time 92640732808 and logical clock time 373.
+Sent to both machines that the logical clock time is 374. The system time is 92898369545.
+Internal event at system time 93154962931 and logical clock time 375.
+Internal event at system time 93409421949 and logical clock time 376.
+Internal event at system time 93665555096 and logical clock time 377.
+Internal event at system time 93920177566 and logical clock time 378.
+Internal event at system time 94177674167 and logical clock time 379.
+Sent to both machines that the logical clock time is 380. The system time is 94431474884.
+Internal event at system time 94688099859 and logical clock time 381.
+Sent to machine 1 that the logical clock time is 382. The system time is 94944400093.
+Internal event at system time 95199117396 and logical clock time 383.
+Sent to machine 1 that the logical clock time is 384. The system time is 95455361146.
+Internal event at system time 95712051166 and logical clock time 385.
+Internal event at system time 95967044941 and logical clock time 386.
+Received a message that the logical clock time is 385. New logical clock time is 387. System time is 96222007771. Length of message queue: 0.
+Sent to machine 2 that the logical clock time is 388. The system time is 96476006637.
+Internal event at system time 96731415524 and logical clock time 389.
+Internal event at system time 96985481443 and logical clock time 390.
+Sent to machine 1 that the logical clock time is 391. The system time is 97238115338.
+Internal event at system time 97494771255 and logical clock time 392.
+Sent to machine 1 that the logical clock time is 393. The system time is 97749779293.
+Internal event at system time 98005432233 and logical clock time 394.
+Received a message that the logical clock time is 393. New logical clock time is 395. System time is 98264874047. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 396. The system time is 98521528295.
+Sent to machine 2 that the logical clock time is 397. The system time is 98778590110.
+Internal event at system time 99031349699 and logical clock time 398.
+Internal event at system time 99285848733 and logical clock time 399.
+Internal event at system time 99540370555 and logical clock time 400.
+Internal event at system time 99796881989 and logical clock time 401.
+Internal event at system time 100048688239 and logical clock time 402.
+Internal event at system time 100306278796 and logical clock time 403.
+Sent to machine 1 that the logical clock time is 404. The system time is 100562724942.
+Received a message that the logical clock time is 403. New logical clock time is 405. System time is 100818966869. Length of message queue: 0.
+Internal event at system time 101073361074 and logical clock time 406.
+Internal event at system time 101331436356 and logical clock time 407.
+Sent to machine 2 that the logical clock time is 408. The system time is 101587357659.
+Internal event at system time 101844191751 and logical clock time 409.
+Sent to machine 2 that the logical clock time is 410. The system time is 102101026799.
+Sent to machine 1 that the logical clock time is 411. The system time is 102356416104.
+Sent to both machines that the logical clock time is 412. The system time is 102614858583.
+Internal event at system time 102872690456 and logical clock time 413.
+Sent to machine 2 that the logical clock time is 414. The system time is 103127561637.
+Internal event at system time 103382459284 and logical clock time 415.
+Sent to machine 1 that the logical clock time is 416. The system time is 103639601072.
+Internal event at system time 103894483607 and logical clock time 417.
+Sent to machine 1 that the logical clock time is 418. The system time is 104150943529.
+Internal event at system time 104409698463 and logical clock time 419.
+Internal event at system time 104664648335 and logical clock time 420.
+Internal event at system time 104921167166 and logical clock time 421.
+Internal event at system time 105178745962 and logical clock time 422.
+Received a message that the logical clock time is 421. New logical clock time is 423. System time is 105434075364. Length of message queue: 0.
+Internal event at system time 105690212227 and logical clock time 424.
+Internal event at system time 105945822765 and logical clock time 425.
+Internal event at system time 106201264880 and logical clock time 426.
+Internal event at system time 106458484577 and logical clock time 427.
+Internal event at system time 106714597580 and logical clock time 428.
+Received a message that the logical clock time is 426. New logical clock time is 429. System time is 106966980472. Length of message queue: 0.
+Sent to machine 2 that the logical clock time is 430. The system time is 107224116338.
+Internal event at system time 107477255102 and logical clock time 431.
+Internal event at system time 107732538490 and logical clock time 432.
+Internal event at system time 107985408659 and logical clock time 433.
+Internal event at system time 108241227733 and logical clock time 434.
+Sent to machine 2 that the logical clock time is 435. The system time is 108498057270.
+Internal event at system time 108755830185 and logical clock time 436.
+Sent to both machines that the logical clock time is 437. The system time is 109010393590.
+Internal event at system time 109266146687 and logical clock time 438.
+Internal event at system time 109519529129 and logical clock time 439.
+Sent to both machines that the logical clock time is 440. The system time is 109774520307.
+Internal event at system time 110031139294 and logical clock time 441.
+Internal event at system time 110285146435 and logical clock time 442.
+Received a message that the logical clock time is 442. New logical clock time is 443. System time is 110540655065. Length of message queue: 0.
+Internal event at system time 110793147119 and logical clock time 444.
+Received a message that the logical clock time is 444. New logical clock time is 445. System time is 111049143408. Length of message queue: 0.
+Internal event at system time 111304242126 and logical clock time 446.
+Sent to machine 2 that the logical clock time is 447. The system time is 111562048294.
+Sent to both machines that the logical clock time is 448. The system time is 111817403638.
+Internal event at system time 112072720161 and logical clock time 449.
+Internal event at system time 112329124833 and logical clock time 450.
+Internal event at system time 112585213867 and logical clock time 451.
+Received a message that the logical clock time is 451. New logical clock time is 452. System time is 112841657412. Length of message queue: 0.
+Internal event at system time 113097871946 and logical clock time 453.
+Sent to machine 2 that the logical clock time is 454. The system time is 113356239499.
+Internal event at system time 113619640179 and logical clock time 455.
+Internal event at system time 113874003631 and logical clock time 456.
+Internal event at system time 114129188948 and logical clock time 457.
+Received a message that the logical clock time is 457. New logical clock time is 458. System time is 114385129848. Length of message queue: 0.
+Internal event at system time 114642074409 and logical clock time 459.
+Internal event at system time 114897897513 and logical clock time 460.
+Received a message that the logical clock time is 459. New logical clock time is 461. System time is 115150557093. Length of message queue: 0.
+Internal event at system time 115403027883 and logical clock time 462.
+Internal event at system time 115659486047 and logical clock time 463.
+Internal event at system time 115914557837 and logical clock time 464.
+Sent to both machines that the logical clock time is 465. The system time is 116171406758.
+Internal event at system time 116429146843 and logical clock time 466.
+Internal event at system time 116685269456 and logical clock time 467.
+Received a message that the logical clock time is 467. New logical clock time is 468. System time is 116940316249. Length of message queue: 0.
+Received a message that the logical clock time is 468. New logical clock time is 469. System time is 117195151396. Length of message queue: 0.
+Received a message that the logical clock time is 469. New logical clock time is 470. System time is 117449136476. Length of message queue: 0.
+Internal event at system time 117706167285 and logical clock time 471.
+Sent to machine 2 that the logical clock time is 472. The system time is 117962481646.
+Internal event at system time 118221565360 and logical clock time 473.
+Internal event at system time 118473903609 and logical clock time 474.
+Sent to machine 1 that the logical clock time is 475. The system time is 118729369845.
+Sent to machine 2 that the logical clock time is 476. The system time is 118983728064.
+Sent to machine 2 that the logical clock time is 477. The system time is 119236477964.
+Internal event at system time 119488597537 and logical clock time 478.
+Sent to machine 2 that the logical clock time is 479. The system time is 119743770967.
+Internal event at system time 119997736901 and logical clock time 480.
+Internal event at system time 120251143948 and logical clock time 481.
+Internal event at system time 120509457283 and logical clock time 482.
+Internal event at system time 120767216911 and logical clock time 483.
+Internal event at system time 121021016076 and logical clock time 484.
+Received a message that the logical clock time is 484. New logical clock time is 485. System time is 121276323992. Length of message queue: 0.
+Internal event at system time 121533723450 and logical clock time 486.
+Sent to machine 2 that the logical clock time is 487. The system time is 121788550964.
+Internal event at system time 122046792735 and logical clock time 488.
+Internal event at system time 122298736272 and logical clock time 489.
+Internal event at system time 122552163549 and logical clock time 490.
+Internal event at system time 122806766377 and logical clock time 491.
+Internal event at system time 123062946658 and logical clock time 492.
+Sent to machine 2 that the logical clock time is 493. The system time is 123317768297.
+Internal event at system time 123571141479 and logical clock time 494.
+Internal event at system time 123826825054 and logical clock time 495.
+Sent to machine 1 that the logical clock time is 496. The system time is 124083708085.
+Internal event at system time 124341171737 and logical clock time 497.
+Sent to both machines that the logical clock time is 498. The system time is 124597826236.
+Internal event at system time 124850920278 and logical clock time 499.
+Internal event at system time 125109349891 and logical clock time 500.
+Sent to machine 2 that the logical clock time is 501. The system time is 125367932368.
+Internal event at system time 125625852958 and logical clock time 502.
+Internal event at system time 125882500937 and logical clock time 503.
+Sent to machine 2 that the logical clock time is 504. The system time is 126139192674.
+Internal event at system time 126398512658 and logical clock time 505.
+Internal event at system time 126654850507 and logical clock time 506.
+Sent to machine 1 that the logical clock time is 507. The system time is 126909494882.
+Internal event at system time 127164963906 and logical clock time 508.
+Internal event at system time 127422026330 and logical clock time 509.
+Sent to both machines that the logical clock time is 510. The system time is 127676111428.
+Internal event at system time 127932427726 and logical clock time 511.
+Sent to machine 1 that the logical clock time is 512. The system time is 128187615701.
+Sent to both machines that the logical clock time is 513. The system time is 128443857713.
+Internal event at system time 128698207426 and logical clock time 514.
+Internal event at system time 128951128736 and logical clock time 515.
+Internal event at system time 129209378474 and logical clock time 516.
+Internal event at system time 129464436356 and logical clock time 517.
+Sent to machine 2 that the logical clock time is 518. The system time is 129720798353.
+Internal event at system time 129976792774 and logical clock time 519.
+Internal event at system time 130232479937 and logical clock time 520.
+Internal event at system time 130489501389 and logical clock time 521.
+Internal event at system time 130744332784 and logical clock time 522.
+Internal event at system time 131000615218 and logical clock time 523.
+Internal event at system time 131257745996 and logical clock time 524.
+Internal event at system time 131514290949 and logical clock time 525.
+Received a message that the logical clock time is 524. New logical clock time is 526. System time is 131768269929. Length of message queue: 0.
+Internal event at system time 132024967166 and logical clock time 527.
+Internal event at system time 132282417380 and logical clock time 528.
+Internal event at system time 132535872270 and logical clock time 529.
+Internal event at system time 132791123205 and logical clock time 530.
+Internal event at system time 133044291619 and logical clock time 531.
+Internal event at system time 133301409422 and logical clock time 532.
+Sent to machine 1 that the logical clock time is 533. The system time is 133559456515.
+Sent to machine 2 that the logical clock time is 534. The system time is 133817420309.
+Internal event at system time 134070692356 and logical clock time 535.
+Sent to machine 2 that the logical clock time is 536. The system time is 134325712210.
+Internal event at system time 134582578981 and logical clock time 537.
+Internal event at system time 134839175886 and logical clock time 538.
+Received a message that the logical clock time is 539. New logical clock time is 540. System time is 135097591996. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 541. The system time is 135353130808.
+Internal event at system time 135609890685 and logical clock time 542.
+Sent to machine 2 that the logical clock time is 543. The system time is 135864713374.
+Internal event at system time 136121389414 and logical clock time 544.
+Internal event at system time 136376702536 and logical clock time 545.
+Internal event at system time 136635974094 and logical clock time 546.
+Internal event at system time 136890082049 and logical clock time 547.
+Received a message that the logical clock time is 547. New logical clock time is 548. System time is 137143830595. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 549. The system time is 137398227135.
+Internal event at system time 137654816537 and logical clock time 550.
+Internal event at system time 137912811855 and logical clock time 551.
+Internal event at system time 138169702654 and logical clock time 552.
+Internal event at system time 138426011671 and logical clock time 553.
+Received a message that the logical clock time is 551. New logical clock time is 554. System time is 138684992048. Length of message queue: 0.
+Internal event at system time 138945167782 and logical clock time 555.
+Received a message that the logical clock time is 553. New logical clock time is 556. System time is 139203092184. Length of message queue: 0.
+Internal event at system time 139460964234 and logical clock time 557.
+Received a message that the logical clock time is 554. New logical clock time is 558. System time is 139715764037. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 559. The system time is 139972540648.
+Received a message that the logical clock time is 556. New logical clock time is 560. System time is 140228801580. Length of message queue: 0.
+Internal event at system time 140484578532 and logical clock time 561.
+Internal event at system time 140739232075 and logical clock time 562.
+Internal event at system time 140994883728 and logical clock time 563.
+Internal event at system time 141247187983 and logical clock time 564.
+Internal event at system time 141502943581 and logical clock time 565.
+Sent to machine 1 that the logical clock time is 566. The system time is 141759338292.
+Internal event at system time 142016953044 and logical clock time 567.
+Internal event at system time 142278416493 and logical clock time 568.
+Sent to machine 2 that the logical clock time is 569. The system time is 142534957188.
+Internal event at system time 142792679620 and logical clock time 570.
+Sent to both machines that the logical clock time is 571. The system time is 143048388875.
+Internal event at system time 143300984870 and logical clock time 572.
+Internal event at system time 143554488569 and logical clock time 573.
+Internal event at system time 143810741515 and logical clock time 574.
+Sent to machine 2 that the logical clock time is 575. The system time is 144066366566.
+Internal event at system time 144324428166 and logical clock time 576.
+Sent to machine 1 that the logical clock time is 577. The system time is 144581347806.
+Internal event at system time 144836599642 and logical clock time 578.
+Internal event at system time 145093693258 and logical clock time 579.
+Internal event at system time 145347627928 and logical clock time 580.
+Internal event at system time 145602683346 and logical clock time 581.
+Sent to machine 2 that the logical clock time is 582. The system time is 145859547355.
+Sent to both machines that the logical clock time is 583. The system time is 146119595527.
+Internal event at system time 146381396378 and logical clock time 584.
+Sent to machine 1 that the logical clock time is 585. The system time is 146636524329.
+Sent to machine 1 that the logical clock time is 586. The system time is 146892700572.
+Internal event at system time 147147407336 and logical clock time 587.
+Sent to both machines that the logical clock time is 588. The system time is 147401541789.
+Sent to machine 2 that the logical clock time is 589. The system time is 147653479421.
+Internal event at system time 147912871625 and logical clock time 590.
+Internal event at system time 148169429676 and logical clock time 591.
+Internal event at system time 148429522953 and logical clock time 592.
+Sent to machine 2 that the logical clock time is 593. The system time is 148684845624.
+Internal event at system time 148941970740 and logical clock time 594.
+Internal event at system time 149202435948 and logical clock time 595.
+Received a message that the logical clock time is 595. New logical clock time is 596. System time is 149459432302. Length of message queue: 0.
+Internal event at system time 149719224464 and logical clock time 597.
+Internal event at system time 149975647719 and logical clock time 598.
+Sent to machine 1 that the logical clock time is 599. The system time is 150235585045.
+Internal event at system time 150494126528 and logical clock time 600.
+Internal event at system time 150750023474 and logical clock time 601.
+Internal event at system time 151009714761 and logical clock time 602.
+Internal event at system time 151265131983 and logical clock time 603.
+Internal event at system time 151521635844 and logical clock time 604.
+Internal event at system time 151781455488 and logical clock time 605.
+Internal event at system time 152040541996 and logical clock time 606.
+Internal event at system time 152297589752 and logical clock time 607.
+Internal event at system time 152553991853 and logical clock time 608.
+Internal event at system time 152814111443 and logical clock time 609.
+Internal event at system time 153071427782 and logical clock time 610.
+Internal event at system time 153326555504 and logical clock time 611.
+Sent to machine 2 that the logical clock time is 612. The system time is 153581423254.
+Internal event at system time 153837231512 and logical clock time 613.
+Internal event at system time 154093867903 and logical clock time 614.
+Received a message that the logical clock time is 614. New logical clock time is 615. System time is 154350741346. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 616. The system time is 154604060774.
+Sent to machine 1 that the logical clock time is 617. The system time is 154859467125.
+Internal event at system time 155116383241 and logical clock time 618.
+Internal event at system time 155369155929 and logical clock time 619.
+Sent to both machines that the logical clock time is 620. The system time is 155622217478.
+Sent to machine 2 that the logical clock time is 621. The system time is 155876983952.
+Internal event at system time 156132300656 and logical clock time 622.
+Internal event at system time 156386757087 and logical clock time 623.
+Received a message that the logical clock time is 623. New logical clock time is 624. System time is 156646672217. Length of message queue: 0.
+Internal event at system time 156905687136 and logical clock time 625.
+Internal event at system time 157162467432 and logical clock time 626.
+Received a message that the logical clock time is 625. New logical clock time is 627. System time is 157419991307. Length of message queue: 0.
+Sent to machine 2 that the logical clock time is 628. The system time is 157680352672.
+Internal event at system time 157939801390 and logical clock time 629.
+Internal event at system time 158197275296 and logical clock time 630.
+Internal event at system time 158455297458 and logical clock time 631.
+Internal event at system time 158713981191 and logical clock time 632.
+Sent to both machines that the logical clock time is 633. The system time is 158971370212.
+Internal event at system time 159228687639 and logical clock time 634.
+Internal event at system time 159483249378 and logical clock time 635.
+Internal event at system time 159739631810 and logical clock time 636.
+Sent to both machines that the logical clock time is 637. The system time is 159997242942.
+Sent to machine 2 that the logical clock time is 638. The system time is 160254334127.
+Sent to machine 2 that the logical clock time is 639. The system time is 160509371190.
+Internal event at system time 160763902422 and logical clock time 640.
+Sent to machine 2 that the logical clock time is 641. The system time is 161019074546.
+Sent to machine 1 that the logical clock time is 642. The system time is 161273545062.
+Internal event at system time 161530269257 and logical clock time 643.
+Internal event at system time 161786744544 and logical clock time 644.
+Internal event at system time 162041405312 and logical clock time 645.
+Internal event at system time 162297449792 and logical clock time 646.
+Internal event at system time 162553161876 and logical clock time 647.
+Internal event at system time 162809425260 and logical clock time 648.
+Sent to both machines that the logical clock time is 649. The system time is 163067279297.
+Internal event at system time 163320349977 and logical clock time 650.
+Internal event at system time 163578737984 and logical clock time 651.
+Received a message that the logical clock time is 651. New logical clock time is 652. System time is 163834375126. Length of message queue: 0.
+Internal event at system time 164092733286 and logical clock time 653.
+Internal event at system time 164347288163 and logical clock time 654.
+Internal event at system time 164604803673 and logical clock time 655.
+Sent to machine 1 that the logical clock time is 656. The system time is 164862003322.
+Internal event at system time 165120152046 and logical clock time 657.
+Received a message that the logical clock time is 656. New logical clock time is 658. System time is 165376797796. Length of message queue: 0.
+Internal event at system time 165630559176 and logical clock time 659.
+Internal event at system time 165883948466 and logical clock time 660.
+Sent to machine 2 that the logical clock time is 661. The system time is 166141670445.
+Internal event at system time 166397678958 and logical clock time 662.
+Internal event at system time 166652750441 and logical clock time 663.
+Internal event at system time 166909402433 and logical clock time 664.
+Internal event at system time 167168276680 and logical clock time 665.
+Sent to machine 2 that the logical clock time is 666. The system time is 167425099470.
+Sent to both machines that the logical clock time is 667. The system time is 167680780826.
+Internal event at system time 167933736741 and logical clock time 668.
+Sent to both machines that the logical clock time is 669. The system time is 168187823252.
+Internal event at system time 168439874346 and logical clock time 670.
+Sent to both machines that the logical clock time is 671. The system time is 168693411780.
+Internal event at system time 168949190610 and logical clock time 672.
+Received a message that the logical clock time is 673. New logical clock time is 674. System time is 169203467246. Length of message queue: 0.
+Received a message that the logical clock time is 674. New logical clock time is 675. System time is 169462718201. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 676. The system time is 169718927152.
+Internal event at system time 169979363697 and logical clock time 677.
+Internal event at system time 170237607417 and logical clock time 678.
+Internal event at system time 170494121581 and logical clock time 679.
+Internal event at system time 170747286367 and logical clock time 680.
+Received a message that the logical clock time is 678. New logical clock time is 681. System time is 171002964726. Length of message queue: 0.
+Received a message that the logical clock time is 679. New logical clock time is 682. System time is 171262820287. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 683. The system time is 171521398610.
+Internal event at system time 171779297983 and logical clock time 684.
+Internal event at system time 172035004327 and logical clock time 685.
+Received a message that the logical clock time is 682. New logical clock time is 686. System time is 172294331337. Length of message queue: 0.
+Received a message that the logical clock time is 683. New logical clock time is 687. System time is 172550619414. Length of message queue: 0.
+Internal event at system time 172809477287 and logical clock time 688.
+Sent to machine 1 that the logical clock time is 689. The system time is 173065540846.
+Internal event at system time 173325251575 and logical clock time 690.
+Internal event at system time 173583311389 and logical clock time 691.
+Internal event at system time 173837872228 and logical clock time 692.
+Internal event at system time 174097211690 and logical clock time 693.
+Sent to machine 1 that the logical clock time is 694. The system time is 174357149028.
+Internal event at system time 174613732856 and logical clock time 695.
+Internal event at system time 174869760632 and logical clock time 696.
+Received a message that the logical clock time is 690. New logical clock time is 697. System time is 175128233405. Length of message queue: 0.
+Sent to machine 2 that the logical clock time is 698. The system time is 175381773898.
+Sent to machine 2 that the logical clock time is 699. The system time is 175638568056.
+Internal event at system time 175893434057 and logical clock time 700.
+Internal event at system time 176150731868 and logical clock time 701.
+Received a message that the logical clock time is 701. New logical clock time is 702. System time is 176406972790. Length of message queue: 0.
+Internal event at system time 176663651203 and logical clock time 703.
+Internal event at system time 176915177101 and logical clock time 704.
+Internal event at system time 177171880177 and logical clock time 705.
+Received a message that the logical clock time is 704. New logical clock time is 706. System time is 177428186565. Length of message queue: 0.
+Internal event at system time 177686089704 and logical clock time 707.
+Internal event at system time 177943647406 and logical clock time 708.
+Internal event at system time 178196995646 and logical clock time 709.
+Sent to machine 1 that the logical clock time is 710. The system time is 178449937723.
+Sent to machine 1 that the logical clock time is 711. The system time is 178704224608.
+Internal event at system time 178962669336 and logical clock time 712.
+Internal event at system time 179216941745 and logical clock time 713.
+Internal event at system time 179471449851 and logical clock time 714.
+Received a message that the logical clock time is 711. New logical clock time is 715. System time is 179727506639. Length of message queue: 0.
+Internal event at system time 179983245673 and logical clock time 716.
+Received a message that the logical clock time is 712. New logical clock time is 717. System time is 180241706148. Length of message queue: 0.
+Internal event at system time 180497030481 and logical clock time 718.
+Internal event at system time 180756471929 and logical clock time 719.
+Internal event at system time 181013644103 and logical clock time 720.
+Sent to machine 2 that the logical clock time is 721. The system time is 181272319146.
+Sent to both machines that the logical clock time is 722. The system time is 181527172771.
+Internal event at system time 181782413007 and logical clock time 723.
+Received a message that the logical clock time is 724. New logical clock time is 725. System time is 182041169797. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 726. The system time is 182298342255.
+Sent to both machines that the logical clock time is 727. The system time is 182552409331.
+Internal event at system time 182809472679 and logical clock time 728.
+Internal event at system time 183069097221 and logical clock time 729.
+Sent to machine 2 that the logical clock time is 730. The system time is 183321799370.
+Internal event at system time 183577185839 and logical clock time 731.
+Sent to machine 1 that the logical clock time is 732. The system time is 183832597476.
+Internal event at system time 184092545153 and logical clock time 733.
+Internal event at system time 184347637486 and logical clock time 734.
+Internal event at system time 184606381295 and logical clock time 735.
+Sent to machine 2 that the logical clock time is 736. The system time is 184863649319.
+Internal event at system time 185120762592 and logical clock time 737.
+Sent to machine 1 that the logical clock time is 738. The system time is 185380330489.
+Sent to machine 1 that the logical clock time is 739. The system time is 185640755616.
+Internal event at system time 185901005812 and logical clock time 740.
+Internal event at system time 186159356041 and logical clock time 741.
+Sent to machine 1 that the logical clock time is 742. The system time is 186413737842.
+Internal event at system time 186671561918 and logical clock time 743.
+Internal event at system time 186930381868 and logical clock time 744.
+Internal event at system time 187190540619 and logical clock time 745.
+Internal event at system time 187446918998 and logical clock time 746.
+Internal event at system time 187705213927 and logical clock time 747.
+Internal event at system time 187963557991 and logical clock time 748.
+Received a message that the logical clock time is 746. New logical clock time is 749. System time is 188231560021. Length of message queue: 0.
+Sent to both machines that the logical clock time is 750. The system time is 188489996781.
+Sent to machine 1 that the logical clock time is 751. The system time is 188746958069.
+Internal event at system time 189004241304 and logical clock time 752.
+Sent to machine 1 that the logical clock time is 753. The system time is 189259338192.
+Sent to machine 2 that the logical clock time is 754. The system time is 189514880503.
+Received a message that the logical clock time is 754. New logical clock time is 755. System time is 189773420788. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 756. The system time is 190027234067.
+Sent to machine 2 that the logical clock time is 757. The system time is 190283363481.
+Internal event at system time 190539818920 and logical clock time 758.
+Internal event at system time 190796943255 and logical clock time 759.
+Sent to machine 2 that the logical clock time is 760. The system time is 191057148569.
+Internal event at system time 191316003736 and logical clock time 761.
+Sent to machine 2 that the logical clock time is 762. The system time is 191577045691.
+Sent to machine 1 that the logical clock time is 763. The system time is 191838618125.
+Internal event at system time 192096893881 and logical clock time 764.
+Internal event at system time 192352325253 and logical clock time 765.
+Internal event at system time 192609415975 and logical clock time 766.
+Internal event at system time 192868180234 and logical clock time 767.
+Internal event at system time 193127192769 and logical clock time 768.
+Sent to machine 2 that the logical clock time is 769. The system time is 193385482616.
+Internal event at system time 193642947980 and logical clock time 770.
+Internal event at system time 193903639268 and logical clock time 771.
+Received a message that the logical clock time is 771. New logical clock time is 772. System time is 194163477321. Length of message queue: 0.
+Internal event at system time 194417578446 and logical clock time 773.
+Internal event at system time 194671489513 and logical clock time 774.
+Internal event at system time 194931409422 and logical clock time 775.
+Internal event at system time 195185765880 and logical clock time 776.
+Internal event at system time 195442298943 and logical clock time 777.
+Received a message that the logical clock time is 776. New logical clock time is 778. System time is 195696935815. Length of message queue: 0.
+Sent to both machines that the logical clock time is 779. The system time is 195955841239.
+Sent to machine 1 that the logical clock time is 780. The system time is 196213541399.
+Sent to machine 2 that the logical clock time is 781. The system time is 196472485465.
+Sent to both machines that the logical clock time is 782. The system time is 196730156787.
+Sent to machine 2 that the logical clock time is 783. The system time is 196985818181.
+Internal event at system time 197243934820 and logical clock time 784.
+Internal event at system time 197501411346 and logical clock time 785.
+Internal event at system time 197760547631 and logical clock time 786.
+Internal event at system time 198016852308 and logical clock time 787.
+Internal event at system time 198273380633 and logical clock time 788.
+Internal event at system time 198540321752 and logical clock time 789.
+Internal event at system time 198796832227 and logical clock time 790.
+Internal event at system time 199054974319 and logical clock time 791.
+Internal event at system time 199313457980 and logical clock time 792.
+Sent to both machines that the logical clock time is 793. The system time is 199568510466.
+Internal event at system time 199827875574 and logical clock time 794.
+Internal event at system time 200085129018 and logical clock time 795.
+Sent to both machines that the logical clock time is 796. The system time is 200344091398.
+Sent to machine 1 that the logical clock time is 797. The system time is 200597331478.
+Sent to machine 1 that the logical clock time is 798. The system time is 200855950324.
+Internal event at system time 201113335445 and logical clock time 799.
+Internal event at system time 201372234976 and logical clock time 800.
+Received a message that the logical clock time is 800. New logical clock time is 801. System time is 201626191769. Length of message queue: 0.
+Received a message that the logical clock time is 801. New logical clock time is 802. System time is 201879968540. Length of message queue: 0.
+Internal event at system time 202135889387 and logical clock time 803.
+Internal event at system time 202389500902 and logical clock time 804.
+Received a message that the logical clock time is 803. New logical clock time is 805. System time is 202647024515. Length of message queue: 0.
+Internal event at system time 202903971651 and logical clock time 806.
+Internal event at system time 203162347258 and logical clock time 807.
+Sent to machine 2 that the logical clock time is 808. The system time is 203417411494.
+Sent to machine 2 that the logical clock time is 809. The system time is 203675042790.
+Internal event at system time 203930331574 and logical clock time 810.
+Internal event at system time 204185650099 and logical clock time 811.
+Internal event at system time 204441535061 and logical clock time 812.
+Sent to machine 2 that the logical clock time is 813. The system time is 204696667060.
+Internal event at system time 204955320164 and logical clock time 814.
+Sent to machine 2 that the logical clock time is 815. The system time is 205213275997.
+Sent to machine 1 that the logical clock time is 816. The system time is 205471950033.
+Internal event at system time 205730175554 and logical clock time 817.
+Sent to both machines that the logical clock time is 818. The system time is 205990501502.
+Internal event at system time 206249710272 and logical clock time 819.
+Sent to both machines that the logical clock time is 820. The system time is 206503142400.
+Sent to machine 2 that the logical clock time is 821. The system time is 206762075695.
+Internal event at system time 207021269845 and logical clock time 822.
+Internal event at system time 207280028533 and logical clock time 823.
+Sent to both machines that the logical clock time is 824. The system time is 207538276938.
+Internal event at system time 207796671797 and logical clock time 825.
+Received a message that the logical clock time is 826. New logical clock time is 827. System time is 208056190129. Length of message queue: 0.
+Received a message that the logical clock time is 827. New logical clock time is 828. System time is 208313342200. Length of message queue: 0.
+Sent to both machines that the logical clock time is 829. The system time is 208567545584.
+Internal event at system time 208823101948 and logical clock time 830.
+Sent to both machines that the logical clock time is 831. The system time is 209081031809.
+Sent to machine 2 that the logical clock time is 832. The system time is 209339145080.
+Internal event at system time 209596901037 and logical clock time 833.
+Internal event at system time 209855662974 and logical clock time 834.
+Internal event at system time 210109327137 and logical clock time 835.
+Sent to both machines that the logical clock time is 836. The system time is 210362034161.
+Internal event at system time 210615338351 and logical clock time 837.
+Sent to both machines that the logical clock time is 838. The system time is 210873144021.
+Internal event at system time 211129964512 and logical clock time 839.
+Received a message that the logical clock time is 840. New logical clock time is 841. System time is 211388424635. Length of message queue: 0.
+Internal event at system time 211645862349 and logical clock time 842.
+Received a message that the logical clock time is 841. New logical clock time is 843. System time is 211903864736. Length of message queue: 0.
+Internal event at system time 212163216345 and logical clock time 844.
+Internal event at system time 212420932832 and logical clock time 845.
+Sent to machine 1 that the logical clock time is 846. The system time is 212680017439.
+Received a message that the logical clock time is 844. New logical clock time is 847. System time is 212940298590. Length of message queue: 0.
+Internal event at system time 213197815372 and logical clock time 848.
+Internal event at system time 213456836335 and logical clock time 849.
+Internal event at system time 213714813496 and logical clock time 850.
+Sent to machine 2 that the logical clock time is 851. The system time is 213971009160.
+Internal event at system time 214229926085 and logical clock time 852.
+Sent to both machines that the logical clock time is 853. The system time is 214485583580.
+Internal event at system time 214746559908 and logical clock time 854.
+Internal event at system time 215003986684 and logical clock time 855.
+Received a message that the logical clock time is 855. New logical clock time is 856. System time is 215261820126. Length of message queue: 0.
+Sent to machine 1 that the logical clock time is 857. The system time is 215517835897.
+Internal event at system time 215774709715 and logical clock time 858.
+Sent to both machines that the logical clock time is 859. The system time is 216032576502.
+Sent to machine 1 that the logical clock time is 860. The system time is 216285393486.
+Received a message that the logical clock time is 861. New logical clock time is 862. System time is 216542499922. Length of message queue: 0.
+Internal event at system time 216797389515 and logical clock time 863.
+Internal event at system time 217055506613 and logical clock time 864.
+Received a message that the logical clock time is 863. New logical clock time is 865. System time is 217313449528. Length of message queue: 0.
+Received a message that the logical clock time is 864. New logical clock time is 866. System time is 217568752113. Length of message queue: 0.
+Sent to both machines that the logical clock time is 867. The system time is 217824661762.
+Internal event at system time 218079360864 and logical clock time 868.
+Internal event at system time 218333994411 and logical clock time 869.
+Internal event at system time 218593213558 and logical clock time 870.
+Received a message that the logical clock time is 870. New logical clock time is 871. System time is 218846781636. Length of message queue: 0.
+Sent to machine 2 that the logical clock time is 872. The system time is 219101659323.
+Internal event at system time 219360553220 and logical clock time 873.
+Internal event at system time 219617850464 and logical clock time 874.
+Received a message that the logical clock time is 875. New logical clock time is 876. System time is 219870356162. Length of message queue: 0.
+Internal event at system time 220126819359 and logical clock time 877.
+Sent to both machines that the logical clock time is 878. The system time is 220385924381.
+Sent to machine 2 that the logical clock time is 879. The system time is 220641063540.
+Sent to machine 1 that the logical clock time is 880. The system time is 220896399559.
+Internal event at system time 221155177171 and logical clock time 881.
+Received a message that the logical clock time is 881. New logical clock time is 882. System time is 221409456010. Length of message queue: 0.
+Sent to both machines that the logical clock time is 883. The system time is 221667919968.
+Internal event at system time 221927082185 and logical clock time 884.
+Internal event at system time 222186628786 and logical clock time 885.
+Internal event at system time 222446482968 and logical clock time 886.
+Internal event at system time 222703719530 and logical clock time 887.
+Received a message that the logical clock time is 887. New logical clock time is 888. System time is 222959627078. Length of message queue: 0.
+Internal event at system time 223218567781 and logical clock time 889.
+Internal event at system time 223474052891 and logical clock time 890.
+Internal event at system time 223731318249 and logical clock time 891.
+Received a message that the logical clock time is 890. New logical clock time is 892. System time is 223991197590. Length of message queue: 0.
+Internal event at system time 224250505551 and logical clock time 893.
+Received a message that the logical clock time is 891. New logical clock time is 894. System time is 224506286590. Length of message queue: 0.
+Internal event at system time 224764842506 and logical clock time 895.
+Internal event at system time 225020152951 and logical clock time 896.
+Internal event at system time 225275657954 and logical clock time 897.
+Internal event at system time 225535056438 and logical clock time 898.
+Sent to both machines that the logical clock time is 899. The system time is 225796429254.
+Internal event at system time 226056148256 and logical clock time 900.
+Internal event at system time 226315750741 and logical clock time 901.
+Sent to machine 2 that the logical clock time is 902. The system time is 226570926885.
+Internal event at system time 226827762662 and logical clock time 903.
+Sent to machine 1 that the logical clock time is 904. The system time is 227084417105.
+Sent to machine 1 that the logical clock time is 905. The system time is 227340512853.
+Internal event at system time 227596434850 and logical clock time 906.
+Internal event at system time 227855631183 and logical clock time 907.
+Received a message that the logical clock time is 907. New logical clock time is 908. System time is 228114665456. Length of message queue: 0.
+Received a message that the logical clock time is 908. New logical clock time is 909. System time is 228369040336. Length of message queue: 0.
+Internal event at system time 228629681207 and logical clock time 910.
+Sent to machine 2 that the logical clock time is 911. The system time is 228889089570.
+Internal event at system time 229146287754 and logical clock time 912.
+Sent to both machines that the logical clock time is 913. The system time is 229398043087.
+Internal event at system time 229654914858 and logical clock time 914.
+Internal event at system time 229909327274 and logical clock time 915.
+Sent to machine 2 that the logical clock time is 916. The system time is 230165806178.
+Sent to machine 2 that the logical clock time is 917. The system time is 230422042563.
+Internal event at system time 230676956649 and logical clock time 918.
+Sent to both machines that the logical clock time is 919. The system time is 230931334195.
+Internal event at system time 231186703337 and logical clock time 920.
+Received a message that the logical clock time is 921. New logical clock time is 922. System time is 231446271490. Length of message queue: 0.
+Internal event at system time 231703372851 and logical clock time 923.
+Received a message that the logical clock time is 922. New logical clock time is 924. System time is 231962931566. Length of message queue: 0.
+Internal event at system time 232220526995 and logical clock time 925.
+Internal event at system time 232479832922 and logical clock time 926.
+Internal event at system time 232738493876 and logical clock time 927.
+Received a message that the logical clock time is 925. New logical clock time is 928. System time is 232996279631. Length of message queue: 0.
