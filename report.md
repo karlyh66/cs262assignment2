@@ -15,49 +15,42 @@ Run the scale model at least 5 times for at least one minute each time. Examine 
     * For fast machines (e.g. with rate 6), not much changes in its logical clock because it was already primarily updating its own clock whether thorugh send events or internal events.
     * For slower machines, however, more logical clock value jumps happen but the jumps are smaller. This is because they getting messages more often from the faster machines, and there is less clock gain in between messages.
 
-## Drift
-**Machine with rate 1:**
+
+## Data Analysis Techniques
+Instead of only exmamining log.txt files, we wanted to take a closer look at how logical clock updates and clock ticks work when we concurrently run peer-to-peer interacting machines at different internal speeds. To that end, we collect .csv format data for each run and each machine. Specifically, on each run, each machine generates a dataframe, where each row represents what happens during one clock tick. The dataframe has the following columns:
+* `'event_type'`: a `string` type of either `'internal'`, `'receive'`, `'send1'`, `'send2'`, or `'sendboth'`. 
+* `'system_time'`: an `int` type measuring system time in nanoseconds.
+* `'old_clock_time'`: `int`, the logical clock value _before_ the clock tick in question.
+* `'new_clock_time'`: `int`, the new logical clock value _after_ the clock tick in question.
+* `'message_queue_length'`: `int`, the message queue length _after_ the action done during this clock tick. If the event type is `'receive'`, the `'message_queue_length'` is the queue length _after_ we pop a message off of the queue.
+
+The analysis below draws from data frames generated from five runs of the system, indexed as Experiments 4-9. (Experiment IDs 1-3 were either used for debugging or will be used for demo day.)
+
+## Logical Clock Value Over Time
+We first examined how the logical clock value for machines of various rates grows over time, through plotting a scatterplot of logical clock value vs. system time. To best illustrate how machines of different clock rates differ, we only plot the first 50 clock ticks of each machine. This set of plots helps us see the drift of the machines in terms of the "updatedness" of each machine's logical clock relative to other machines' clocks.
+
+## Extent to which Logical Clock is Overwritten by Incoming Message
+In order to examine the extent to which logical clock is overwritten by incoming messages, we look at each machine's logical clock _jump_ values from one clock tick to the next. We plotted these jumps as (1) scatterplots across system time, and (2) in histogram form (as distributions). This set of plots helps us see the drift of the machines in terms of how often (and by how much) each machine's logical clock updates are dictated by clock values of other machines.
+
+### Scatterplots
+
+### Histograms
+
+## Length of the Message Queue Over Time
+
+
+## Frequency of Send Vs. Receive
+We also want to see which events machines of different rates tend to perform most (since the actions that a machine performs depends heavily on the length of the machine's message queue).
+
+Slower machines: receiving much more than sending
+Faster machines: pretty much sending or doing interal events most of the time, seldom receiving because it sends faster than it receives
+
+## More on Drift: Log Files Analysis
 * Logical clock time received from server: this is the clock time sent in the most recent message to this machine by another (most likely faster) machine.
 * Updated logical clock value: this is the machine's logical clock value after it takes a message off the queue.
 
-Takeaway: this machine processes messages much slower than it receives them. 
+Takeaway: this machine processes messages much slower than it receives them. The most updated logical clock values are far back in the message queue of this machine.
 ```
-Logical clock time received from server: 434
-Updated logical clock value to now be 346
-Logical clock time received from server: 449
-Logical clock time received from server: 451
-Updated logical clock value to now be 347
-Logical clock time received from server: 453
-Updated logical clock value to now be 348
-Updated logical clock value to now be 352
-Logical clock time received from server: 465
-Updated logical clock value to now be 357
-Logical clock time received from server: 470
-Updated logical clock value to now be 358
-Logical clock time received from server: 475
-Updated logical clock value to now be 364
-Logical clock time received from server: 477
-Updated logical clock value to now be 365
-Logical clock time received from server: 483
-Updated logical clock value to now be 372
-Logical clock time received from server: 484
-Updated logical clock value to now be 373
-Logical clock time received from server: 492
-Logical clock time received from server: 492
-Updated logical clock value to now be 374
-Updated logical clock value to now be 386
-Logical clock time received from server: 500
-Logical clock time received from server: 506
-Updated logical clock value to now be 391
-Logical clock time received from server: 507
-Updated logical clock value to now be 392
-Logical clock time received from server: 513
-Updated logical clock value to now be 393
-Updated logical clock value to now be 407
-Updated logical clock value to now be 413
-Updated logical clock value to now be 414
-Logical clock time received from server: 532
-Updated logical clock value to now be 417
 Updated logical clock value to now be 418
 Updated logical clock value to now be 419
 Logical clock time received from server: 550
@@ -88,22 +81,8 @@ Logical clock time received from server: 601
 ```
 
 **Machine with rate 5:**
-
-Takeaway: this machine processes messages much slower than it receives them. 
-
+Takeaway: this machine processes messages as quickly as it receives them. In fact, the machine's logical clock is ahead of what the incoming messages say.
 ```
-Logical clock time received from server: 500
-Updated logical clock value to now be 504
-Logical clock time received from server: 519
-Updated logical clock value to now be 524
-Logical clock time received from server: 532
-Updated logical clock value to now be 535
-Logical clock time received from server: 534
-Updated logical clock value to now be 539
-Logical clock time received from server: 537
-Updated logical clock value to now be 544
-Logical clock time received from server: 553
-Updated logical clock value to now be 557
 Logical clock time received from server: 561
 Updated logical clock value to now be 563
 Logical clock time received from server: 563
