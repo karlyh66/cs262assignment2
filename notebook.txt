@@ -59,3 +59,12 @@ Next steps:
 - consider starting to track system time from the moment all 3 clients connect to server
     - treat system time as "nanoseconds elapsed since the beginning of this system"
     - we currently only record nanoseconds since the UNIX epoch
+
+March 8, 2023
+=========================
+Progress:
+- updated logical clock unit test to test more cases
+- added unit test for listen
+- experimented with less variation in machine speed and less often internal events as suggested
+  to observe results, noted in report.md
+- completed data analysis for different machines and added observations to report
