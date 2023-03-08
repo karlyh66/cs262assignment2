@@ -6,12 +6,15 @@ Run the scale model at least 5 times for at least one minute each time. Examine 
 
 ## General Observations
 * In machines with faster rates (e.g. 5-6), the logical clock tends to update almost consecutively, which makes sense because it is executing so fast that the majority of its logical clock progressions come from its own actions, rather than catching up to other machines.
-* In machines with slower rates (e.g. 1-2), the logical clock tends to exhibit many jumps (the slower the rate relative to other machines, the larger the jumps), which makes sense because in between its slow operations, other machines are executing many operations and sending updates that it must catch up with.
+* In machines with slower rates (e.g. 1-2), the logical clock tends to exhibit many jumps (the slower the rate relative to other machines, the larger the jumps), which makes sense because in between its slow operations, other machines are executing many operations and sending updates that it must catch up with. 
+    * In addition, the majority of the time, slow machines are only receiving messages and processing those without time to send its own messages or do internal events.
 
 ## Further Variations
-* We tried running the machines with a smaller variation in clock cycles,
+* We tried running the machines with a smaller variation in clock cycles by setting the random rate for a client to only take on value 1 or 2. 
+    * As expected, behavior "evened out" a lot for all machines: there was a more even balance between sending messages, receiving messages, and internal events. Relatively slower machines got a chance to send some messages and have internal events, and relatively faster machines also go a chance to receive some messages.
 * We tried running the machines with a smaller probability of the event being internal by setting the event random generator to only values 1-4. For 1-3, messages are sent, and now only 4 (which we expect to happen ~25% of the time) generates an internal event.
-    * Observations
+    * For fast machines (e.g. with rate 6), not much changes in its logical clock because it was already primarily updating its own clock whether thorugh send events or internal events.
+    * For slower machines, however, more logical clock value jumps happen but the jumps are smaller. This is because they getting messages more often from the faster machines, and there is less clock gain in between messages.
 
 ## Drift
 
