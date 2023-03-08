@@ -84,8 +84,7 @@ The slow machines are generally most behind on their message queues, and that ex
 ## Frequency of Send Vs. Receive Vs. Internal Event
 We also want to see which events machines of different rates tend to perform most (since the actions that a machine performs depends heavily on the length of the machine's message queue).
 
-Slower machines: receiving much more than sending
-Faster machines: pretty much sending or doing interal events most of the time, seldom receiving because it sends faster than it receives
+Slower machines are receiving much more than sending, whereas faster events are pretty much sending or doing interal events most of the time, seldom receiving because it sends faster than it receives.
 
 ![alt text](img/pie_6.png)
 ![alt text](img/pie_7.png)
