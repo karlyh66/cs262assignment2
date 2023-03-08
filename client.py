@@ -30,7 +30,7 @@ class Client(object):
         print("Rate: " + str(self.rate))
 
         # open and start writing into a log file
-        self.f = open("log{}_{}.txt".format(str(self.id), str(self.run_no)), "w")
+        self.f = open("{}_log{}.txt".format(str(self.run_no), str(self.id)), "w")
         self.f.write("New log started at system time " + str(time.monotonic_ns()) + "\n")
         self.f.write("Clock rate: " + str(self.rate) + "\n")
 
@@ -39,7 +39,7 @@ class Client(object):
         exit_message = "exit"
         self.client_socket.send(exit_message.encode())
         self.client_socket.close()
-        self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)))
+        self.df.to_csv("{}_machine{}.csv".format(str(self.run_no), str(self.id)))
         sys.exit(0)
 
     def listen(self):
@@ -50,7 +50,7 @@ class Client(object):
             if data.decode() == "exit":
                 # when another machine exits, this one should too
                 self.client_socket.close()
-                self.df.to_csv("machine{}_{}.csv".format(str(self.id), str(self.run_no)))
+                self.df.to_csv("{}_machine{}.csv".format(str(self.run_no), str(self.id)))
                 return
             print('Logical clock time received from server: ' + data.decode())  # show in terminal
             # self.f.write(data.decode() + "\n")
