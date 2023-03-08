@@ -91,8 +91,10 @@ Slower machines are receiving much more than sending, whereas faster events are 
 ![alt text](img/pie_8.png)
 
 ## More on Drift: Log Files Analysis
-* Logical clock time received from server: this is the clock time sent in the most recent message to this machine by another (most likely faster) machine.
+* Logical clock time received from server: this is the clock time _just_ sent (and queued) in a message to this machine by another (most likely faster) machine. This message queueing happens independently (and regardless) of the machine's clock.
 * Updated logical clock value: this is the machine's logical clock value after it takes a message off the queue.
+
+**Machine with rate 1:**
 
 Takeaway: this machine processes messages much slower than it receives them. The most updated logical clock values are far back in the message queue of this machine.
 ```
@@ -126,6 +128,7 @@ Logical clock time received from server: 601
 ```
 
 **Machine with rate 5:**
+
 Takeaway: this machine processes messages as quickly as it receives them. In fact, the machine's logical clock is ahead of what the incoming messages say.
 ```
 Logical clock time received from server: 561
