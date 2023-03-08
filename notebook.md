@@ -1,3 +1,5 @@
+This is a lab notebook tracking our day-by-day progress. For a report of logical clock observations, see [report.md](https://github.com/karlyh66/cs262assignment2/blob/main/report.md).
+
 March 1, 2023
 =========================
 Progress:
