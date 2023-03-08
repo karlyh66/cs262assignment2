@@ -1,7 +1,6 @@
 # Report of Observations
 
 ## Directions
-
 Run the scale model at least 5 times for at least one minute each time. Examine the logs, and discuss (in the lab book) the size of the jumps in the values for the logical clocks, drift in the values of the local logical clocks in the different machines (you can get a god’s eye view because of the system time), and the impact different timings on such things as gaps in the logical clock values and length of the message queue. Observations and reflections about the model and the results of running the model are more than welcome.
 
 ## General Observations
@@ -17,7 +16,6 @@ Run the scale model at least 5 times for at least one minute each time. Examine 
     * For slower machines, however, more logical clock value jumps happen but the jumps are smaller. This is because they getting messages more often from the faster machines, and there is less clock gain in between messages.
 
 ## Drift
-
 **Machine with rate 1:**
 * Logical clock time received from server: this is the clock time sent in the most recent message to this machine by another (most likely faster) machine.
 * Updated logical clock value: this is the machine's logical clock value after it takes a message off the queue.
