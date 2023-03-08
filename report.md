@@ -29,18 +29,28 @@ The analysis below draws from data frames generated from five runs of the system
 ## Logical Clock Value Over Time
 We first examined how the logical clock value for machines of various rates grows over time, through plotting a scatterplot of logical clock value vs. system time. To best illustrate how machines of different clock rates differ, we only plot the first 50 clock ticks of each machine. This set of plots helps us see the drift of the machines in terms of the "updatedness" of each machine's logical clock relative to other machines' clocks.
 
-![alt text](img/drift1_4.png)
-![alt text](img/drift1_6.png)
-![alt text](img/drift1_7.png)
+![alt text](img/drift1_4.png)![alt text](img/drift1_6.png)![alt text](img/drift1_7.png)
+
+We can see that, like observed in log files previously, fast machines generally update their logical clocks consecutively (in a linear relationship to system time), whereas slower machines exhibit "jumps" where they receive messages from faster ones and must catch up. We also see that in systems where machines' rates are similar, the jumps are less apparent, but in systems where there is large rate spread (e.g. 1 and 6), the slow machine must catch up in big jumps.
 
 ## Extent to which Logical Clock is Overwritten by Incoming Message
 In order to examine the extent to which logical clock is overwritten by incoming messages, we look at each machine's logical clock _jump_ values from one clock tick to the next. We plotted these jumps as (1) scatterplots across system time, and (2) in histogram form (as distributions). This set of plots helps us see the drift of the machines in terms of how often (and by how much) each machine's logical clock updates are dictated by clock values of other machines.
+
+![alt text](img/jump_4.png)![alt text](img/jump_5.png)
+![alt text](img/jump_6.png)![alt text](img/jump_8.png)
+![alt text](img/jumphist_4.png)![alt text](img/jumphist_6.png)![alt text](img/jumphist_8.png)
+
+Similarly, these results support our previous observations.
 
 ## Frequency of Send Vs. Receive
 We also want to see which events machines of different rates tend to perform most (since the actions that a machine performs depends heavily on the length of the machine's message queue).
 
 Slower machines: receiving much more than sending
 Faster machines: pretty much sending or doing interal events most of the time, seldom receiving because it sends faster than it receives
+
+![alt text](img/pie_6.png)
+![alt text](img/pie_7.png)
+![alt text](img/pie_8.png)
 
 ## More on Drift: Log Files Analysis
 * Logical clock time received from server: this is the clock time sent in the most recent message to this machine by another (most likely faster) machine.
