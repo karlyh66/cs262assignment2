@@ -20,4 +20,4 @@ Then we generate a random number from 1-10 (we experimented with smaller probabi
 A message consists of the random number generated (used by the server to determine message recipients) and the logical clock time.
 
 ## Experimental observations
-View report.md.
+View [report.md](https://github.com/karlyh66/cs262assignment2/blob/main/report.md).

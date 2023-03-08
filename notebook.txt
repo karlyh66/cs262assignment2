@@ -68,3 +68,13 @@ Progress:
 - experimented with less variation in machine speed and less often internal events as suggested
   to observe results, noted in report.md
 - completed data analysis for different machines and added observations to report
+
+
+March 8, 2023 (evening)
+=========================
+Progress:
+- did data analysis and visualization of the following aspects:
+    - logical clock value over time
+    - extent to which logical clock is overwritten by incoming message
+    - length of message queue over time
+    - frequency of send message vs. receive message vs. internal event
