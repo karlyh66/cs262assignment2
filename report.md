@@ -26,6 +26,8 @@ Instead of only exmamining log.txt files, we wanted to take a closer look at how
 
 The analysis below draws from data frames generated from five runs of the system, indexed as Experiments 4-9. (Experiment IDs 1-3 were either used for debugging or will be used for demo day.)
 
+To see the code that generated the plots, see [analysis.ipynb](https://github.com/karlyh66/cs262assignment2/blob/main/analysis.ipynb).
+
 ## Logical Clock Value Over Time
 We first examined how the logical clock value for machines of various rates grows over time, through plotting a scatterplot of logical clock value vs. system time. To best illustrate how machines of different clock rates differ, we only plot the first 50 clock ticks of each machine. This set of plots helps us see the drift of the machines in terms of the "updatedness" of each machine's logical clock relative to other machines' clocks.
 
@@ -34,15 +36,52 @@ We first examined how the logical clock value for machines of various rates grow
 We can see that, like observed in log files previously, fast machines generally update their logical clocks consecutively (in a linear relationship to system time), whereas slower machines exhibit "jumps" where they receive messages from faster ones and must catch up. We also see that in systems where machines' rates are similar, the jumps are less apparent, but in systems where there is large rate spread (e.g. 1 and 6), the slow machine must catch up in big jumps.
 
 ## Extent to which Logical Clock is Overwritten by Incoming Message
-In order to examine the extent to which logical clock is overwritten by incoming messages, we look at each machine's logical clock _jump_ values from one clock tick to the next. We plotted these jumps as (1) scatterplots across system time, and (2) in histogram form (as distributions). This set of plots helps us see the drift of the machines in terms of how often (and by how much) each machine's logical clock updates are dictated by clock values of other machines.
+In order to examine the extent to which logical clock is overwritten by incoming messages, we look at each machine's logical clock _jump_ values from one clock tick to the next. We plotted these jumps as (1) scatterplots across system time, and (2) in histogram form (as distributions). This set of plots helps us see the drift of the machines in terms of how often (and by how much) each machine's logical clock updates are dictated by clock values of other machines
 
-![alt text](img/jump_4.png)![alt text](img/jump_5.png)
-![alt text](img/jump_6.png)![alt text](img/jump_8.png)
-![alt text](img/jumphist_4.png)![alt text](img/jumphist_6.png)![alt text](img/jumphist_8.png)
+We choose experiments 4, 6, and 8 as salient examples.
 
-Similarly, these results support our previous observations.
+Experiment 4:
 
-## Frequency of Send Vs. Receive
+![alt text](img/jump_4.png)
+![alt text](img/jumphist_4.png)
+
+The rate 2 and rate 3 machines have higher jump values than the rate 5 machine (whose jump sizes are always 1).
+
+Experiment 6:
+
+![alt text](img/jump_6.png)
+![alt text](img/jumphist_6.png)
+In the rate 6 machine, the jump values are always 1, whereas in the rate 1 machine, the jump values tend to be the highest. The rate 3 machine shows in-between behavior.
+
+Experiment 8:
+
+![alt text](img/jump_8.png)
+![alt text](img/jumphist_8.png)
+
+These results support our previous general observations: a slower machine's logical clock is dictated to a larger extent by faster machines' clocks than by its own logical clock---often, these slow machines "take on" the logical clock values of the faster machines.
+
+
+## Length of the Message Queue Over Time
+We plot message cue length (y-axis) over system time (x-axis). Experiments 6 and 8 are salient examples:
+
+Experiment 6:
+
+![alt text](img/queue_6.png)
+
+The rate 1 machine has a linearly increasing queue because the rate at which it receives messages cannot catch up to the rate at which other machines send messages to it. The rate 6 machine is always up-to-date with the message queue---it seldom gets any messages (relative to its number of clock ticks), and when it does, it can instantly pop each new message off its queue.
+
+
+Experiment 8:
+
+![alt text](img/queue_8.png)
+
+Notice how the rate 6 and rate 5 machines are noticeably and significantly faster at reading from its message queue than the rate 2 machine is.
+
+
+The slow machines are generally most behind on their message queues, and that explains why these machines see larger gaps in logical clock values between clock ticks. 
+
+
+## Frequency of Send Vs. Receive Vs. Internal Event
 We also want to see which events machines of different rates tend to perform most (since the actions that a machine performs depends heavily on the length of the machine's message queue).
 
 Slower machines: receiving much more than sending
