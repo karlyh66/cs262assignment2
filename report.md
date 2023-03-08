@@ -29,15 +29,12 @@ The analysis below draws from data frames generated from five runs of the system
 ## Logical Clock Value Over Time
 We first examined how the logical clock value for machines of various rates grows over time, through plotting a scatterplot of logical clock value vs. system time. To best illustrate how machines of different clock rates differ, we only plot the first 50 clock ticks of each machine. This set of plots helps us see the drift of the machines in terms of the "updatedness" of each machine's logical clock relative to other machines' clocks.
 
+![alt text](img/drift1_4.png)
+![alt text](img/drift1_6.png)
+![alt text](img/drift1_7.png)
+
 ## Extent to which Logical Clock is Overwritten by Incoming Message
 In order to examine the extent to which logical clock is overwritten by incoming messages, we look at each machine's logical clock _jump_ values from one clock tick to the next. We plotted these jumps as (1) scatterplots across system time, and (2) in histogram form (as distributions). This set of plots helps us see the drift of the machines in terms of how often (and by how much) each machine's logical clock updates are dictated by clock values of other machines.
-
-### Scatterplots
-
-### Histograms
-
-## Length of the Message Queue Over Time
-
 
 ## Frequency of Send Vs. Receive
 We also want to see which events machines of different rates tend to perform most (since the actions that a machine performs depends heavily on the length of the machine's message queue).
