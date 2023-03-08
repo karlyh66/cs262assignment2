@@ -1,3 +1,5 @@
+This is a lab notebook tracking our day-by-day progress. For a report of logical clock observations, see [report.md](https://github.com/karlyh66/cs262assignment2/blob/main/report.md).
+
 March 1, 2023
 =========================
 Progress:
@@ -17,11 +19,11 @@ Progress:
 Most logical clock functionality is implemented
 - We now take random number generation into account to determine each machine's clock rate, and the action taken at each clock clock_cycle
 - The code "responds" to the random number telling the client which other machine(s) to send the message to (if any), as encoded in the random number from 1-10
-    - In particular, the server parses the message sent by the client, in the form "<recipient code> <logical clock value>"
+    - In particular, the server parses the message sent by the client, in the form `'<recipient code> <logical clock value>'`
     - Recipient code "1" means send to the first other machine, recipient code "2" means send to the second other machine, and recipient code "3" means send to both other machines
     - To each client, the "first other machine" remains the same machine throughout (as does the "second other machine")
 - Implemented writing to logs
-- Implemented actually simulating the clock rates by having client do a `time.sleep(2 / self.rate)` (will change to 1 / self.rate later, but we wanted to observe things more slowly)
+- Implemented actually simulating the clock rates by having client do a `time.sleep(2 / self.rate)` (will change to `1 / self.rate` later, but we wanted to observe things more slowly)
 - Implemented properly updating the client clock value
 
 Issues:
@@ -50,7 +52,7 @@ March 7, 2023
 Progress:
 - we found a bug caused by the clients already starting their clock cycles (so, sending messages) before all three clients are connected
     - this leads to the message parsing code (in the server) throwing an exception
-    - for context, all of the messeges that each client sends to the server are of format "<sender type> <logical clock value>" (a concatenation of two ints, with a whitespace between them)
+    - for context, all of the messeges that each client sends to the server are of format `'<sender type> <logical clock value>'` (a concatenation of two ints, with a whitespace between them)
         - sender type = 1 if send is to the first other machine, 2 if send is to the second other machine, 3 if the send is to both machines
     - we fixed this bug by having the clients not go into the clock_cycle() infinite loop until sender sends them a message indicating that the all three clients have connected
 - collected more data (we have 5 runs' worth of data now, in .txt and .csv format)

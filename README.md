@@ -21,3 +21,6 @@ A message consists of the random number generated (used by the server to determi
 
 ## Experimental observations
 View [report.md](https://github.com/karlyh66/cs262assignment2/blob/main/report.md).
+
+## Lab Notebook
+View [notebook.md](https://github.com/karlyh66/cs262assignment2/blob/main/notebook.md).
